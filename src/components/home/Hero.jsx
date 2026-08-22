@@ -17,9 +17,10 @@ function Hero() {
 
         <h1
           id="titulo-principal"
-          className="mt-6 max-w-5xl text-[clamp(3.5rem,9vw,7.5rem)] leading-[0.94] font-semibold tracking-[-0.06em]"
+          className="mt-6 max-w-4xl text-[clamp(3rem,6.2vw,5.75rem)] leading-[0.95] font-semibold tracking-[-0.055em]"
         >
-          {student.fullName}
+          <span className="block">Frieda María</span>
+          <span className="block">Ortiz López</span>
         </h1>
 
         <p className="mt-7 font-serif text-[clamp(1.75rem,4vw,3.5rem)] leading-tight italic text-accent">
