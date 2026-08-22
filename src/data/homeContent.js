@@ -1,0 +1,140 @@
+export const homeContent = {
+  introduction: {
+    title: "Un registro estructurado del aprendizaje",
+    accent: "aprendizaje",
+    paragraphs: [
+      "Este portafolio digital reúne y documenta las actividades, prácticas, herramientas y proyectos desarrollados durante la asignatura CNO IV — Seguridad Informática.",
+      "Su propósito es presentar de manera clara y sistemática el proceso de aprendizaje, las evidencias producidas y las competencias técnicas adquiridas en áreas como fundamentos de ciberseguridad, análisis de vulnerabilidades y pruebas de penetración.",
+      "El contenido se actualizará progresivamente durante el semestre conforme se desarrollen nuevas actividades, prácticas y proyectos.",
+    ],
+  },
+
+  profile: {
+    title: "Perfil académico",
+    accent: "académico",
+    description:
+      "Soy Frieda María Ortiz López, estudiante de séptimo semestre de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de San Luis Potosí. Me interesa comprender cómo se diseñan, construyen y protegen los sistemas tecnológicos. Actualmente busco fortalecer mis conocimientos en seguridad informática, desarrollo de software, redes, automatización y análisis técnico mediante proyectos académicos y ejercicios prácticos.",
+    metadata: [
+      {
+        label: "Semestre",
+        value: "07",
+      },
+      {
+        label: "Programa",
+        value: "Ingeniería en TI",
+      },
+      {
+        label: "Enfoque",
+        value: "Ciberseguridad",
+      },
+      {
+        label: "Ubicación",
+        value: "San Luis Potosí, MX",
+      },
+      {
+        label: "Estado",
+        value: "En formación",
+      },
+    ],
+  },
+
+  courseFocus: {
+    title: "Áreas de estudio",
+    accent: "estudio",
+    description:
+      "La asignatura integra fundamentos, ejercicios prácticos y documentación técnica orientados a comprender los riesgos, controles y procesos relacionados con la protección de sistemas de información.",
+    areas: [
+      "Fundamentos de seguridad informática",
+      "Principios de ciberseguridad",
+      "Análisis de vulnerabilidades",
+      "Pruebas de penetración",
+      "Uso de herramientas especializadas",
+      "Documentación de prácticas y resultados",
+      "Evidencias audiovisuales y código fuente",
+      "Análisis de resultados y conclusiones",
+    ],
+  },
+
+  sections: [
+    {
+      id: "home",
+      number: "01",
+      name: "Inicio",
+      description:
+        "Presentación general, identidad académica, propósito e información técnica del portafolio.",
+      status: "Disponible",
+    },
+    {
+      id: "notes",
+      number: "02",
+      name: "Notas",
+      description:
+        "Conceptos, reflexiones y documentación teórica desarrollada durante el curso.",
+      status: "Próximamente",
+    },
+    {
+      id: "tools",
+      number: "03",
+      name: "Herramientas",
+      description:
+        "Registro de software, plataformas, comandos y recursos utilizados.",
+      status: "Próximamente",
+    },
+    {
+      id: "projects",
+      number: "04",
+      name: "Proyectos",
+      description:
+        "Prácticas integradoras, código, evidencias, resultados y conclusiones.",
+      status: "Próximamente",
+    },
+    {
+      id: "certificates",
+      number: "05",
+      name: "Certificados",
+      description:
+        "Credenciales y formación complementaria relacionada con el área.",
+      status: "Próximamente",
+    },
+  ],
+
+  technicalInformation: {
+    items: [
+      {
+        label: "Interfaz",
+        value: "React",
+      },
+      {
+        label: "Lenguaje",
+        value: "JavaScript y JSX",
+      },
+      {
+        label: "Construcción",
+        value: "Vite",
+      },
+      {
+        label: "Estilos",
+        value: "Tailwind CSS",
+      },
+      {
+        label: "Arquitectura",
+        value: "Componentes reutilizables",
+      },
+      {
+        label: "Versionado",
+        value: "Git y GitHub",
+      },
+      {
+        label: "Publicación",
+        value: "GitHub Pages — pendiente",
+      },
+      {
+        label: "HTTPS",
+        value: "Pendiente de verificación",
+      },
+    ],
+
+    explanation:
+      "El portafolio utiliza una arquitectura basada en componentes. La página de Inicio concentra la presentación académica y técnica, mientras que la navegación deja preparada la incorporación progresiva de las secciones restantes. Los estilos se desarrollan con un enfoque mobile-first para adaptar la interfaz a dispositivos móviles, tabletas y equipos de escritorio.",
+  },
+};
