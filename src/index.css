@@ -1,11 +1,58 @@
 @import "tailwindcss";
 
 :root {
-    font-family: Inter, system-ui, sans-serif;
-    color: #e2e8f0;
-    background-color: #020617;
+    --background: #f8f3ea;
+    --surface: #f1e9dc;
+    --foreground: #251b17;
+    --muted: #6f625b;
+    --border: #d8ccbc;
+
+    --accent: #9d442d;
+    --accent-hover: #7f3423;
+
+    --terminal-background: #101612;
+    --terminal-foreground: #e2e7e3;
+    --terminal-success: #7ca982;
+    --terminal-warning: #c08a4d;
+
+    --focus: #7c2d12;
+
+    --type-sans:
+        Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --type-serif:
+        "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --type-mono:
+        "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+
+    font-family: var(--type-sans);
+    color: var(--foreground);
+    background-color: var(--background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-surface: var(--surface);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-border: var(--border);
+    --color-accent: var(--accent);
+    --color-accent-hover: var(--accent-hover);
+    --color-terminal-background: var(--terminal-background);
+    --color-terminal-foreground: var(--terminal-foreground);
+    --color-terminal-success: var(--terminal-success);
+    --color-terminal-warning: var(--terminal-warning);
+
+    --font-sans: var(--type-sans);
+    --font-serif: var(--type-serif);
+    --font-mono: var(--type-mono);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 html {
@@ -16,4 +63,54 @@ body {
     min-width: 320px;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+::selection {
+    color: var(--background);
+    background-color: var(--accent);
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
