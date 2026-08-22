@@ -4,6 +4,7 @@ import StudentProfile from "../components/home/StudentProfile";
 import CourseFocus from "../components/home/CourseFocus";
 import PortfolioIndex from "../components/home/PortfolioIndex";
 import TechnicalInformation from "../components/home/TechnicalInformation";
+import ContactForm from "../components/contact/ContactForm";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <CourseFocus />
       <PortfolioIndex />
       <TechnicalInformation />
+      <ContactForm />
     </>
   );
 }
