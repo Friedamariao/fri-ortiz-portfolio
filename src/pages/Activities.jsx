@@ -1,70 +1,64 @@
+import PartialSection from "../components/activities/PartialSection";
+import { activities, partials } from "../data/activities";
+
 function Activities() {
-  const partials = [
-    {
-      number: "01",
-      title: "Parcial I",
-      subject: "Fundamentos de ciberseguridad",
-      status: "En desarrollo",
-    },
-    {
-      number: "02",
-      title: "Parcial II",
-      subject: "Sistemas de gestión de la seguridad",
-      status: "Próximamente",
-    },
-    {
-      number: "03",
-      title: "Parcial III",
-      subject: "Temas actuales en seguridad informática",
-      status: "Próximamente",
-    },
-  ];
+  const publishedActivities = activities.filter(
+    (activity) => activity.status === "available",
+  ).length;
 
   return (
-    <section
-      aria-labelledby="activities-title"
-      className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-28"
-    >
-      <div className="max-w-3xl">
-        <p className="font-mono text-xs tracking-[0.18em] text-accent uppercase">
-          Evidencia académica / CNO IV
-        </p>
+    <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <section aria-labelledby="activities-title" className="py-20 md:py-28">
+        <div className="grid gap-12 md:grid-cols-[1fr_auto] md:items-end">
+          <div className="max-w-3xl">
+            <p className="font-mono text-xs tracking-[0.18em] text-accent uppercase">
+              Evidencia académica / CNO IV
+            </p>
 
-        <h1
-          id="activities-title"
-          className="mt-6 text-[clamp(3rem,7vw,6rem)] leading-[0.95] font-semibold tracking-[-0.055em]"
-        >
-          Actividades
-        </h1>
+            <h1
+              id="activities-title"
+              className="mt-6 text-[clamp(3rem,7vw,6rem)] leading-[0.95] font-semibold tracking-[-0.055em]"
+            >
+              Actividades
+            </h1>
 
-        <p className="mt-8 text-lg leading-8 text-muted">
-          Registro organizado de las actividades, prácticas, informes, código
-          fuente y evidencias desarrolladas durante los tres parciales de la
-          asignatura.
-        </p>
-      </div>
+            <p className="mt-8 text-lg leading-8 text-muted">
+              Registro organizado de las actividades, prácticas, informes,
+              código fuente y evidencias desarrolladas durante los tres
+              parciales de la asignatura.
+            </p>
+          </div>
 
-      <div className="mt-16 border-t border-border">
-        {partials.map((partial) => (
-          <article
-            key={partial.number}
-            className="grid gap-4 border-b border-border py-8 sm:grid-cols-[5rem_1fr_auto] sm:items-center"
-          >
-            <p className="font-mono text-sm text-accent">{partial.number}</p>
-
+          <dl className="grid grid-cols-2 gap-8 border-t border-border pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-10">
             <div>
-              <h2 className="text-2xl font-semibold">{partial.title}</h2>
-
-              <p className="mt-2 text-muted">{partial.subject}</p>
+              <dt className="font-mono text-[0.68rem] tracking-wider text-muted uppercase">
+                Publicadas
+              </dt>
+              <dd className="mt-2 text-3xl font-semibold">
+                {String(publishedActivities).padStart(2, "0")}
+              </dd>
             </div>
 
-            <p className="font-mono text-xs tracking-wider text-muted uppercase">
-              {partial.status}
-            </p>
-          </article>
-        ))}
-      </div>
-    </section>
+            <div>
+              <dt className="font-mono text-[0.68rem] tracking-wider text-muted uppercase">
+                Parciales
+              </dt>
+              <dd className="mt-2 text-3xl font-semibold">
+                {String(partials.length).padStart(2, "0")}
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {partials.map((partial) => (
+        <PartialSection
+          key={partial.id}
+          partial={partial}
+          activities={activities}
+        />
+      ))}
+    </div>
   );
 }
 
