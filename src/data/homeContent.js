@@ -126,11 +126,11 @@ export const homeContent = {
       },
       {
         label: "Publicación",
-        value: "GitHub Pages — pendiente",
+        value: "GitHub Pages",
       },
       {
         label: "HTTPS",
-        value: "Pendiente de verificación",
+        value: "Activo y Verificado",
       },
     ],
 

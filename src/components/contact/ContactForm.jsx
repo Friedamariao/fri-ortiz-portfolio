@@ -213,7 +213,7 @@ function ContactForm() {
             onSubmit={handleSubmit}
             noValidate
           >
-            <div className="absolute -left-[9999px]" aria-hidden="true">
+            <div className="absolute left-[-9999px]" aria-hidden="true">
               <label htmlFor="website">No completes este campo</label>
 
               <input
