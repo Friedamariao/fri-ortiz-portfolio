@@ -10,10 +10,12 @@
     --accent: #9d442d;
     --accent-hover: #7f3423;
 
-    --terminal-background: #101612;
-    --terminal-foreground: #e2e7e3;
-    --terminal-success: #7ca982;
-    --terminal-warning: #c08a4d;
+    --accent-on-dark: #d97a4f;
+    --terminal-background: #241914;
+    --terminal-foreground: #ece4d8;
+    --terminal-success: #d9a463;
+    --terminal-warning: #a89a89;
+    --terminal-border: #3a2c22;
 
     --focus: #7c2d12;
 
@@ -29,6 +31,10 @@
     background-color: var(--background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+
+    --radius-control: 0.5rem;
+    --radius-panel: 0.75rem;
+    --radius-pill: 999px;
 }
 
 @theme inline {
@@ -39,10 +45,12 @@
     --color-border: var(--border);
     --color-accent: var(--accent);
     --color-accent-hover: var(--accent-hover);
+    --color-accent-on-dark: var(--accent-on-dark);
     --color-terminal-background: var(--terminal-background);
     --color-terminal-foreground: var(--terminal-foreground);
     --color-terminal-success: var(--terminal-success);
     --color-terminal-warning: var(--terminal-warning);
+    --color-terminal-border: var(--terminal-border);
 
     --font-sans: var(--type-sans);
     --font-serif: var(--type-serif);
@@ -72,16 +80,13 @@ button,
 input,
 textarea,
 select {
+    border-radius: var(--radius-control);
     font: inherit;
 }
 
 button,
 a {
     -webkit-tap-highlight-color: transparent;
-}
-
-a {
-    color: inherit;
 }
 
 img,
@@ -98,6 +103,43 @@ svg {
 :focus-visible {
     outline: 3px solid var(--focus);
     outline-offset: 4px;
+}
+
+.terminal-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--terminal-warning) var(--terminal-background);
+}
+
+.terminal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-scrollbar::-webkit-scrollbar-track {
+    background: var(--terminal-background);
+}
+
+.terminal-scrollbar::-webkit-scrollbar-thumb {
+    border: 2px solid var(--terminal-background);
+    border-radius: 999px;
+    background-color: var(--terminal-warning);
+}
+
+.terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-on-dark);
+}
+
+.terminal-input {
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.terminal-input:focus,
+.terminal-input:focus-visible {
+    border: 0;
+    outline: none;
+    box-shadow: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
