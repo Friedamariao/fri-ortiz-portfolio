@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navigationItems } from "../../data/navigation";
 
 function NavigationItem({ item, onNavigate }) {
@@ -13,9 +13,21 @@ function NavigationItem({ item, onNavigate }) {
         <span>{item.label}</span>
 
         <span className="font-mono text-[0.65rem] tracking-wider uppercase">
-          Próximamente
+          soon
         </span>
       </span>
+    );
+  }
+
+  if (item.path.includes("#")) {
+    return (
+      <Link
+        to={item.path}
+        onClick={onNavigate}
+        className="flex min-h-11 items-center border-b border-transparent text-sm font-semibold text-foreground transition-colors duration-200 hover:text-accent"
+      >
+        {item.label}
+      </Link>
     );
   }
 

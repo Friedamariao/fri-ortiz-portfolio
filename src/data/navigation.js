@@ -14,18 +14,6 @@ export const navigationItems = [
     end: false,
   },
   {
-    id: "notes",
-    label: "Notas",
-    path: null,
-    status: "pending",
-  },
-  {
-    id: "tools",
-    label: "Herramientas",
-    path: null,
-    status: "pending",
-  },
-  {
     id: "projects",
     label: "Proyectos",
     path: null,
@@ -36,5 +24,12 @@ export const navigationItems = [
     label: "Certificados",
     path: null,
     status: "pending",
+  },
+  {
+    id: "contact",
+    label: "Contacto",
+    path: "/#contacto",
+    status: "available",
+    end: false,
   },
 ];
