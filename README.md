@@ -2,7 +2,9 @@
 
 Academic cybersecurity portfolio developed by **Frieda María Ortiz López** for the **CNO IV — Seguridad Informática** course at Universidad Politécnica de San Luis Potosí.
 
-The portfolio documents activities, practices, tools, projects, technical evidence, and learning progress throughout the August–December 2026 term.
+The portfolio documents activities, projects, technical evidence, and learning progress throughout the August–December 2026 term. 
+
+At the end of the course I plan on updating it to include my work and achievements as a reference for future academic and professional opportunities.
 
 ## Live site
 
@@ -194,15 +196,14 @@ The project includes:
 
 Accessibility and responsive behavior will continue to be reviewed as new portfolio sections are introduced.
 
-## Planned sections (although this could change)
+## Planned sections (this is subject tochange)
 
-* Notes
-* Tools
+* Home
 * Activities
 * Projects
 * Certificates
 
-The Activities area will organize academic evidence by assessment period and provide access to documents, downloadable PDF files, code, and additional resources.
+Activities is already live and organizes academic evidence by assessment period (Parcial I, II, III), with access to documents, downloadable PDF files, code, and additional resources as they're published.
 
 ## Author
 
