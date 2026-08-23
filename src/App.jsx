@@ -1,10 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import Activities from "./pages/Activities";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <MainLayout>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </MainLayout>
   );
 }

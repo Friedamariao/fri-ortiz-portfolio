@@ -8,7 +8,7 @@ function MainLayout({ children }) {
       <SkipLink />
       <Header />
 
-      <main id="contenido-principal" className="flex-1">
+      <main id="contenido-principal" tabIndex="-1" className="flex-1">
         {children}
       </main>
 
