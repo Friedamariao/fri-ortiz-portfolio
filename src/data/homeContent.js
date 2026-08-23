@@ -1,10 +1,9 @@
 export const homeContent = {
   introduction: {
-    title: "Un registro estructurado del aprendizaje",
+    title: "Un registro del aprendizaje",
     accent: "aprendizaje",
     paragraphs: [
-      "Este portafolio digital reúne y documenta las actividades, prácticas, herramientas y proyectos desarrollados durante la asignatura CNO IV — Seguridad Informática.",
-      "Su propósito es presentar de manera clara y sistemática el proceso de aprendizaje, las evidencias producidas y las competencias técnicas adquiridas en áreas como fundamentos de ciberseguridad, análisis de vulnerabilidades y pruebas de penetración.",
+      "Este portafolio digital reúne y documenta las actividades, prácticas, y proyectos desarrollados durante la asignatura CNO IV: Seguridad Informática. Pero más allá del requisito académico, es para mí un espacio donde puedo ver con claridad a lo que he puesto mi esfuerzo, he trabajado y logrado, durante el curso.",
       "El contenido se actualizará progresivamente durante el semestre conforme se desarrollen nuevas actividades, prácticas y proyectos.",
     ],
   },
@@ -13,7 +12,7 @@ export const homeContent = {
     title: "Perfil académico",
     accent: "académico",
     description:
-      "Soy Frieda María Ortiz López, estudiante de séptimo semestre de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de San Luis Potosí. Me interesa comprender cómo se diseñan, construyen y protegen los sistemas tecnológicos. Actualmente busco fortalecer mis conocimientos en seguridad informática, desarrollo de software, redes, automatización y análisis técnico mediante proyectos académicos y ejercicios prácticos.",
+      "Soy Frieda María Ortiz López, estudiante de séptimo semestre de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de San Luis Potosí.\nLo que me atrapó para entrar a a la carrera fue la programación, poder tomar una idea y, con las herramientas correctas, convertirla en algo tangible. Esa curiosidad me ha llevado a moverme para trabajar con distintas herramientas como React, Node.js, Python, Docker y PostgreSQL en proyectos de gestión y bases de datos. Actualmente busco ampliar mis conocimientos en pruebas de penetración, análisis de vulnerabilidades y redes.\nCombino mis estudios con dos trabajos, uno de ellos en el área de project management de Presyst, una aplicación web y móvil para empresas proveedoras de servicios, y procuro siempre tener algo nuevo que aprender",
     metadata: [
       {
         label: "Semestre",
@@ -42,16 +41,11 @@ export const homeContent = {
     title: "Áreas de estudio",
     accent: "estudio",
     description:
-      "La asignatura integra fundamentos, ejercicios prácticos y documentación técnica orientados a comprender los riesgos, controles y procesos relacionados con la protección de sistemas de información.",
+      "La materia integra fundamentos, ejercicios prácticos y documentación técnica orientados a comprender los riesgos, controles y procesos relacionados con la protección de sistemas de información.",
     areas: [
-      "Fundamentos de seguridad informática",
-      "Principios de ciberseguridad",
-      "Análisis de vulnerabilidades",
-      "Pruebas de penetración",
-      "Uso de herramientas especializadas",
-      "Documentación de prácticas y resultados",
-      "Evidencias audiovisuales y código fuente",
-      "Análisis de resultados y conclusiones",
+      "Parcial I — Fundamentos de ciberseguridad",
+      "Parcial II — Sistemas de gestión de la seguridad",
+      "Parcial III — Temas actuales en seguridad informática",
     ],
   },
 
@@ -92,41 +86,17 @@ export const homeContent = {
 
   technicalInformation: {
     items: [
-      {
-        label: "Interfaz",
-        value: "React",
-      },
-      {
-        label: "Lenguaje",
-        value: "JavaScript y JSX",
-      },
-      {
-        label: "Construcción",
-        value: "Vite",
-      },
-      {
-        label: "Estilos",
-        value: "Tailwind CSS",
-      },
-      {
-        label: "Arquitectura",
-        value: "Componentes reutilizables",
-      },
-      {
-        label: "Versionado",
-        value: "Git y GitHub",
-      },
-      {
-        label: "Publicación",
-        value: "GitHub Pages",
-      },
-      {
-        label: "HTTPS",
-        value: "Activo y Verificado",
-      },
+      { label: "Lenguaje", value: "JavaScript (JSX)" },
+      { label: "Librería de UI", value: "React 19" },
+      { label: "Enrutamiento", value: "React Router" },
+      { label: "Construcción", value: "Vite" },
+      { label: "Estilos", value: "Tailwind CSS v4" },
+      { label: "Formulario y correo", value: "EmailJS" },
+      { label: "Control de versiones", value: "Git y GitHub" },
+      { label: "Publicación", value: "GitHub Pages" },
     ],
 
     explanation:
-      "El portafolio utiliza una arquitectura basada en componentes. La página de Inicio concentra la presentación académica y técnica, mientras que la navegación deja preparada la incorporación progresiva de las secciones restantes. Los estilos se desarrollan con un enfoque mobile-first para adaptar la interfaz a dispositivos móviles, tabletas y equipos de escritorio.",
+      "El portafolio utiliza una arquitectura basada en componentes reutilizables, organizados por dominio (inicio, actividades, contacto, interfaz) para facilitar su mantenimiento conforme crezca durante el semestre. El desarrollo lo realicé con un enfoque mobile-first, cuidando el contraste de color y manteniendo un diseño limpio y ordenado, adecuado para el contexto académico del portafolio",
   },
 };

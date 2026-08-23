@@ -14,8 +14,8 @@ function TechnicalInformation() {
         id="tecnica-heading"
         number="05"
         label="Implementación"
-        title="Información técnica del"
-        accent="sitio"
+        title="Stack y"
+        accent="arquitectura"
       />
 
       <div className="mt-12 grid gap-12 md:grid-cols-12">
@@ -47,11 +47,11 @@ function TechnicalInformation() {
 
           <div className="mt-8 border-l-2 border-accent pl-5">
             <p className="font-mono text-xs tracking-wider text-muted uppercase">
-              Documentation status
+              Security status
             </p>
 
             <p className="mt-2 text-sm font-semibold">
-              Estructura inicial implementada
+              Certificado SSL activo · HTTPS
             </p>
           </div>
         </div>

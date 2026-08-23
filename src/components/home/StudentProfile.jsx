@@ -15,8 +15,8 @@ function StudentProfile() {
           id="perfil-heading"
           number="02"
           label="Perfil"
-          title="Curiosidad técnica y formación"
-          accent="continua"
+          title="Perfil de"
+          accent="formación"
         />
 
         <div className="mt-12 grid gap-12 md:grid-cols-12">

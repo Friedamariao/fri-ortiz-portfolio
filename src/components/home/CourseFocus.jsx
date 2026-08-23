@@ -14,7 +14,7 @@ function CourseFocus() {
         id="enfoque-heading"
         number="03"
         label="Curso"
-        title="Áreas que conforman la ruta de"
+        title="Ruta de"
         accent="estudio"
       />
 
@@ -25,7 +25,7 @@ function CourseFocus() {
           </p>
 
           <p className="mt-7 font-mono text-xs tracking-[0.16em] text-accent uppercase">
-            Course scope / Learning path
+            Course scope
           </p>
         </div>
 

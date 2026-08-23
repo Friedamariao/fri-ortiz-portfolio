@@ -15,8 +15,8 @@ function PortfolioIndex() {
           id="estructura-heading"
           number="04"
           label="Índice"
-          title="Una estructura preparada para crecer"
-          accent="durante el curso"
+          title="Un mapa para recorrer  "
+          accent="el portafolio"
         />
 
         <div className="mt-14 border-t border-background/20">
