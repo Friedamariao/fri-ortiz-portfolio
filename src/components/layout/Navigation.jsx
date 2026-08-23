@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { navigationItems } from "../../data/navigation";
 
 function NavigationItem({ item, onNavigate }) {
@@ -19,14 +20,21 @@ function NavigationItem({ item, onNavigate }) {
   }
 
   return (
-    <a
-      href={item.href}
+    <NavLink
+      to={item.path}
+      end={item.end}
       onClick={onNavigate}
-      className="flex min-h-11 items-center border-b border-accent text-sm font-semibold text-foreground transition-colors duration-200 hover:text-accent"
-      aria-current="page"
+      className={({ isActive }) =>
+        [
+          "flex min-h-11 items-center border-b text-sm font-semibold transition-colors duration-200 hover:text-accent",
+          isActive
+            ? "border-accent text-accent"
+            : "border-transparent text-foreground",
+        ].join(" ")
+      }
     >
       {item.label}
-    </a>
+    </NavLink>
   );
 }
 
@@ -84,7 +92,7 @@ function Navigation() {
           id="mobile-navigation"
           className="absolute top-full right-0 left-0 border-y border-border bg-background px-5 py-6 shadow-sm lg:hidden"
         >
-          <ul className="mx-auto flex max-w-6xl flex-col gap-3">
+          <ul className="mx-auto flex max-w-7xl flex-col gap-3">
             {navigationItems.map((item) => (
               <li key={item.id}>
                 <NavigationItem item={item} onNavigate={closeMenu} />

@@ -1,5 +1,7 @@
 import { portfolio } from "../../data/portfolio";
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
+
 
 function Header() {
   const { student, course } = portfolio;
@@ -15,8 +17,8 @@ function Header() {
       </div>
 
       <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
-        <a
-          href="#inicio"
+        <Link
+          to="/"
           className="flex min-h-11 items-center gap-3 focus-visible:rounded-sm"
           aria-label="Ir al inicio"
         >
@@ -27,7 +29,7 @@ function Header() {
           <span className="hidden border-l border-border pl-3 text-xs leading-relaxed text-muted sm:block">
             {student.fullName}
           </span>
-        </a>
+        </Link>
 
         <Navigation />
       </div>

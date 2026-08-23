@@ -1,4 +1,5 @@
 import { portfolio } from "../../data/portfolio";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { student, course, site, socialLinks } = portfolio;
@@ -32,12 +33,12 @@ function Footer() {
               </a>
             ))}
 
-            <a
-              href="#inicio"
+            <Link
+              to="/#inicio"
               className="min-h-11 content-center text-sm font-semibold underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
             >
               Volver arriba
-            </a>
+            </Link>
           </div>
 
           <div className="font-mono text-[0.7rem] leading-6 tracking-wider text-muted uppercase md:text-right">

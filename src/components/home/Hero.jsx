@@ -1,4 +1,5 @@
 import { portfolio } from "../../data/portfolio";
+import { Link } from "react-router-dom";
 import InteractiveTerminal from "./InteractiveTerminal";
 
 function Hero() {
@@ -34,12 +35,12 @@ function Hero() {
         </p>
 
         <div className="mt-9 flex flex-wrap gap-4">
-          <a
-            href="#proposito"
+          <Link
+            to="/#proposito"
             className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors duration-200 hover:bg-accent-hover"
           >
             Explorar el portafolio
-          </a>
+          </Link>
 
           {github && (
             <a
