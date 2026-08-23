@@ -10,9 +10,9 @@ function Hero() {
     <section
       id="inicio"
       aria-labelledby="titulo-principal"
-      className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:grid-cols-12 sm:px-8 md:py-28 lg:gap-16"
+      className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:grid-cols-2 sm:px-8 md:py-28 lg:gap-16"
     >
-      <div className="md:col-span-7">
+      <div className="min-w-0">
         <p className="font-mono text-xs tracking-[0.18em] text-accent uppercase">
           UPSLP / CNO IV / Agosto–diciembre 2026
         </p>
@@ -55,7 +55,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="md:col-span-5">
+      <div className="min-w-0">
         <InteractiveTerminal />
       </div>
     </section>

@@ -65,32 +65,24 @@ export const homeContent = {
       status: "Disponible",
     },
     {
-      id: "notes",
+      id: "activities",
       number: "02",
-      name: "Notas",
+      name: "Actividades",
       description:
-        "Conceptos, reflexiones y documentación teórica desarrollada durante el curso.",
-      status: "Próximamente",
-    },
-    {
-      id: "tools",
-      number: "03",
-      name: "Herramientas",
-      description:
-        "Registro de software, plataformas, comandos y recursos utilizados.",
-      status: "Próximamente",
+        "Registro organizado por parcial de las prácticas, evidencias y código desarrollados durante el curso.",
+      status: "Disponible",
     },
     {
       id: "projects",
-      number: "04",
+      number: "03",
       name: "Proyectos",
       description:
-        "Prácticas integradoras, código, evidencias, resultados y conclusiones.",
+        "Prácticas que sintetizan las competencias adquiridas a lo largo del curso.",
       status: "Próximamente",
     },
     {
       id: "certificates",
-      number: "05",
+      number: "04",
       name: "Certificados",
       description:
         "Credenciales y formación complementaria relacionada con el área.",

@@ -147,6 +147,12 @@ svg {
         scroll-behavior: auto;
     }
 
+    .terminal-session-dot,
+    .terminal-typing-cursor,
+    .terminal-idle-cursor {
+        animation: none !important;
+    }
+
     *,
     *::before,
     *::after {
@@ -155,4 +161,49 @@ svg {
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+@keyframes terminal-session-pulse {
+    0%,
+    100% {
+        opacity: 0.45;
+        transform: scale(0.88);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes terminal-cursor-blink {
+    0%,
+    45% {
+        opacity: 1;
+    }
+
+    46%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.terminal-session-dot {
+    display: inline-block;
+    transform-origin: center;
+    animation: terminal-session-pulse 1.8s ease-in-out infinite;
+}
+
+.terminal-typing-cursor {
+    display: inline-block;
+    margin-left: 0.1em;
+    color: var(--accent-on-dark);
+    animation: terminal-cursor-blink 0.9s steps(1, end) infinite;
+}
+
+.terminal-idle-cursor {
+    width: 0.55em;
+    height: 1.05em;
+    background-color: var(--accent-on-dark);
+    animation: terminal-cursor-blink 1s steps(1, end) infinite;
 }
