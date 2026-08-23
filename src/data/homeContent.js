@@ -86,41 +86,17 @@ export const homeContent = {
 
   technicalInformation: {
     items: [
-      {
-        label: "Interfaz",
-        value: "React",
-      },
-      {
-        label: "Lenguaje",
-        value: "JavaScript y JSX",
-      },
-      {
-        label: "Construcción",
-        value: "Vite",
-      },
-      {
-        label: "Estilos",
-        value: "Tailwind CSS",
-      },
-      {
-        label: "Arquitectura",
-        value: "Componentes reutilizables",
-      },
-      {
-        label: "Versionado",
-        value: "Git y GitHub",
-      },
-      {
-        label: "Publicación",
-        value: "GitHub Pages",
-      },
-      {
-        label: "HTTPS",
-        value: "Activo y Verificado",
-      },
+      { label: "Lenguaje", value: "JavaScript (JSX)" },
+      { label: "Librería de UI", value: "React 19" },
+      { label: "Enrutamiento", value: "React Router" },
+      { label: "Construcción", value: "Vite" },
+      { label: "Estilos", value: "Tailwind CSS v4" },
+      { label: "Formulario y correo", value: "EmailJS" },
+      { label: "Control de versiones", value: "Git y GitHub" },
+      { label: "Publicación", value: "GitHub Pages" },
     ],
 
     explanation:
-      "El portafolio utiliza una arquitectura basada en componentes. La página de Inicio concentra la presentación académica y técnica, mientras que la navegación deja preparada la incorporación progresiva de las secciones restantes. Los estilos se desarrollan con un enfoque mobile-first para adaptar la interfaz a dispositivos móviles, tabletas y equipos de escritorio.",
+      "El portafolio utiliza una arquitectura basada en componentes reutilizables, organizados por dominio (inicio, actividades, contacto, interfaz) para facilitar su mantenimiento conforme crezca durante el semestre. El desarrollo lo realicé con un enfoque mobile-first, cuidando el contraste de color y manteniendo un diseño limpio y ordenado, adecuado para el contexto académico del portafolio",
   },
 };

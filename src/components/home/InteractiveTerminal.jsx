@@ -18,9 +18,10 @@ const commandResponses = {
   sections:
     "Inicio [activo] · Actividades [activo] · Proyectos [próximamente] · Certificados [próximamente] · Contacto [activo]",
 
-  tech: "React 19 · Vite · Tailwind CSS v4 · React Router · GitHub Pages · HTTPS",
+  tech: "React 19 · Vite · Tailwind CSS v4 · React Router · Git · GitHub Pages · HTTPS",
 
-  contact: "Usa el formulario de contacto disponible al final de la página de Inicio.",
+  contact:
+    "Usa el formulario de contacto disponible al final de la página de Inicio.",
 };
 
 const availableCommands = Object.keys(commandResponses).concat("clear");
