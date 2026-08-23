@@ -30,8 +30,10 @@ function Hero() {
         </p>
 
         <p className="mt-10 max-w-2xl text-[clamp(1.05rem,1.8vw,1.25rem)] leading-8 text-muted">
-          Estudiante de Ingeniería en Tecnologías de la Información interesada
-          en ciberseguridad, desarrollo de software y documentación técnica.
+          Estudiante de Ingeniería en Tecnologías de la Información con ganas
+          constantes de seguir aprendiendo y creciendo dentro de la
+          ciberseguridad interesada por el pentesting y el análisis de
+          vulnerabilidades.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-4">

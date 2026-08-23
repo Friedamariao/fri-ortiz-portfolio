@@ -15,8 +15,8 @@ function PortfolioIntroduction() {
         id="proposito-heading"
         number="01"
         label="Propósito"
-        title="Un registro estructurado del"
-        accent="aprendizaje"
+        title="El por qué de este"
+        accent="portafolio"
       />
 
       <div className="mt-12 grid gap-8 md:grid-cols-12">
