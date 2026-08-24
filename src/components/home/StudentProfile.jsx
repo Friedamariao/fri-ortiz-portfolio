@@ -20,18 +20,20 @@ function StudentProfile() {
         />
 
         <div className="mt-12 grid gap-12 md:grid-cols-12">
-          <p className="max-w-3xl text-[clamp(1.1rem,1.7vw,1.35rem)] leading-9 md:col-span-7">
+          <p className="max-w-3xl text-[clamp(0.9rem,1.3vw,1.1rem)] leading-7 md:col-span-7">
             {profile.description}
           </p>
 
           <dl className="divide-y divide-border border-y border-border md:col-span-4 md:col-start-9">
             {profile.metadata.map((item) => (
               <div key={item.label} className="grid grid-cols-2 gap-4 py-4">
-                <dt className="font-mono text-xs tracking-wider text-muted uppercase">
+                <dt className="font-mono text-xs tracking-wider uppercase">
                   {item.label}
                 </dt>
 
-                <dd className="text-sm font-semibold">{item.value}</dd>
+                <dd className="font-mono text-xs text-muted">
+                  {item.value}
+                </dd>
               </div>
             ))}
           </dl>

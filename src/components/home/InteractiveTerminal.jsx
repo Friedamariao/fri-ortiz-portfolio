@@ -141,7 +141,7 @@ function InteractiveTerminal() {
           role="log"
           aria-live="polite"
           aria-label="Historial de la terminal"
-          className="terminal-scrollbar h-[300px] overflow-y-auto p-4 text-terminal-foreground"
+          className="terminal-scrollbar h-75 overflow-y-auto p-4 text-terminal-foreground"
         >
           <p className="mb-1 whitespace-pre-wrap" aria-hidden="true">
             {welcomeText}
