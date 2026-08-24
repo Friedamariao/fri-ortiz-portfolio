@@ -8,7 +8,7 @@ function TechnicalInformation() {
     <section
       id="informacion-tecnica"
       aria-labelledby="tecnica-heading"
-      className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28"
+      className="mx-auto max-w-6xl scroll-mt-32 px-5 pt-12 pb-20 sm:px-8 md:pt-16 md:pb-24"
     >
       <SectionHeading
         id="tecnica-heading"

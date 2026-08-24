@@ -1,8 +1,23 @@
-function SectionHeading({ id, number, label, title, accent }) {
+function SectionHeading({
+  id,
+  number,
+  label,
+  title,
+  accent,
+  inverted = false,
+}) {
+  const borderColor = inverted ? "border-background/20" : "border-border";
+
+  const accentColor = inverted ? "text-accent-on-dark" : "text-accent";
+
   return (
-    <header className="grid gap-6 border-t border-border pt-5 md:grid-cols-12">
+    <header
+      className={`grid gap-6 border-t pt-5 md:grid-cols-12 ${borderColor}`}
+    >
       <div className="md:col-span-3">
-        <p className="font-mono text-xs tracking-[0.16em] text-accent uppercase">
+        <p
+          className={`font-mono text-xs tracking-[0.16em] uppercase ${accentColor}`}
+        >
           {number} / {label}
         </p>
       </div>
@@ -14,7 +29,7 @@ function SectionHeading({ id, number, label, title, accent }) {
         >
           {title}{" "}
           {accent && (
-            <span className="font-serif font-normal italic text-accent">
+            <span className={`font-serif font-normal italic ${accentColor}`}>
               {accent}
             </span>
           )}
@@ -25,3 +40,4 @@ function SectionHeading({ id, number, label, title, accent }) {
 }
 
 export default SectionHeading;
+
