@@ -43,7 +43,7 @@ function Hero() {
         <div className="mt-9 flex flex-wrap gap-3">
           <Link
             to="/activities"
-            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors duration-200 hover:bg-accent-hover"
+            className="inline-flex min-h-11 items-center justify-center rounded-none bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors duration-200 hover:bg-accent-hover"
           >
             Ver actividades
           </Link>

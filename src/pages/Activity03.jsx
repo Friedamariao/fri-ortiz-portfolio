@@ -85,7 +85,7 @@ function Activity03() {
   return (
     <article>
       <header className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+        <div className="mx-auto max-w-7xl px-5 pt-8 pb-14 sm:px-8 md:pt-10 md:pb-20">
           <Link
             to="/activities"
             className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-muted transition-colors hover:text-accent"
@@ -93,7 +93,7 @@ function Activity03() {
             Volver a actividades
           </Link>
 
-          <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:items-end">
+          <div className="mt-6 grid gap-12 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               <p className="font-mono text-xs tracking-[0.18em] text-accent uppercase">
                 Parcial I / Actividad 03
