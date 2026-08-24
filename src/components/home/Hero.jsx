@@ -51,7 +51,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-lg border border-border px-6 py-3 text-sm font-semibold transition-colors duration-200 hover:border-accent hover:bg-surface"
             >
-              Ver GitHub ↗
+              Ver GitHub
             </a>
           )}
         </div>
