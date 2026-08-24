@@ -3,7 +3,7 @@ import { activities, partials } from "../data/activities";
 
 function Activities() {
   const publishedActivities = activities.filter(
-    (activity) => activity.status === "available",
+    (activity) => activity.status === "available" && activity.visible !== false,
   ).length;
 
   return (
