@@ -132,7 +132,7 @@ function InteractiveTerminal() {
               ●
             </span>
 
-            <span>sesión activa</span>
+            <span>active session</span>
           </p>
         </div>
 

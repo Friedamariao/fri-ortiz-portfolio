@@ -193,7 +193,7 @@ function ContactForm() {
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 md:py-28">
         <SectionHeading
           id="contacto-heading"
-          number="06"
+          number="05"
           label="Contacto"
           title="Abramos una línea de"
           accent="comunicación"

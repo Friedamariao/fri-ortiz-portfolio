@@ -12,7 +12,7 @@ function TechnicalInformation() {
     >
       <SectionHeading
         id="tecnica-heading"
-        number="05"
+        number="04"
         label="Implementación"
         title="Stack y"
         accent="arquitectura"
