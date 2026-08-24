@@ -2,7 +2,8 @@ import ActivityCard from "./ActivityCard";
 
 function PartialSection({ partial, activities }) {
   const partialActivities = activities.filter(
-    (activity) => activity.partialId === partial.id,
+    (activity) =>
+      activity.partialId === partial.id && activity.visible !== false,
   );
 
   return (

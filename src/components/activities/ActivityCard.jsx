@@ -26,20 +26,6 @@ function ActivityCard({ activity }) {
 
       <p className="mt-4 flex-1 leading-7 text-muted">{activity.description}</p>
 
-      <ul
-        className="mt-6 flex flex-wrap gap-2"
-        aria-label="Tecnologías utilizadas"
-      >
-        {activity.technologies.map((technology) => (
-          <li
-            key={technology}
-            className="rounded-full border border-border bg-surface px-3 py-1 font-mono text-[0.68rem] text-muted"
-          >
-            {technology}
-          </li>
-        ))}
-      </ul>
-
       <div className="mt-8 border-t border-border pt-5">
         {isAvailable ? (
           <Link
@@ -48,7 +34,6 @@ function ActivityCard({ activity }) {
             aria-label={`Ver Actividad ${activity.number}: ${activity.title}`}
           >
             Ver actividad
-            <span aria-hidden="true">→</span>
           </Link>
         ) : (
           <p className="flex min-h-11 items-center font-mono text-xs text-muted">
