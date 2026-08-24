@@ -37,6 +37,7 @@ export const activities = [
     statusLabel: "Disponible",
     path: "/#inicio",
     technologies: ["React", "Vite", "Tailwind CSS", "GitHub Pages"],
+    visible: false,
   },
   {
     id: "activity-03",
@@ -45,9 +46,10 @@ export const activities = [
     partialId: "partial-1",
     description:
       "Implementación y documentación de un programa para registrar eventos de teclado en un entorno controlado.",
-    status: "in-progress",
-    statusLabel: "En desarrollo",
-    path: null,
-    technologies: ["Python", "pynput", "Event hooks", "Callbacks"],
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-03",
+    technologies: ["Python", "pynput", "pywin32", "Callbacks"],
+    visible: true,
   },
 ];
