@@ -34,7 +34,7 @@ function PartialSection({ partial, activities }) {
           ))}
         </div>
       ) : (
-        <div className="mt-10 rounded-xl border border-dashed border-border bg-surface p-8">
+        <div className="mt-10 rounded-none border border-dashed border-border bg-surface p-8">
           <p className="font-mono text-xs tracking-wider text-muted uppercase">
             Sin actividades publicadas
           </p>

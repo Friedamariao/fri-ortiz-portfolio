@@ -1,10 +1,14 @@
-import { portfolio } from "../../data/portfolio";
 import { Link } from "react-router-dom";
+import githubIcon from "../../assets/icons/github.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
+import { portfolio } from "../../data/portfolio";
 import InteractiveTerminal from "./InteractiveTerminal";
 
 function Hero() {
   const { student, socialLinks } = portfolio;
+
   const github = socialLinks.find((link) => link.label === "GitHub");
+  const linkedin = socialLinks.find((link) => link.label === "LinkedIn");
 
   return (
     <section
@@ -36,12 +40,12 @@ function Hero() {
           vulnerabilidades.
         </p>
 
-        <div className="mt-9 flex flex-wrap gap-4">
+        <div className="mt-9 flex flex-wrap gap-3">
           <Link
-            to="/#proposito"
-            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors duration-200 hover:bg-accent-hover"
+            to="/activities"
+            className="inline-flex min-h-11 items-center justify-center rounded-none bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors duration-200 hover:bg-accent-hover"
           >
-            Explorar el portafolio
+            Ver actividades
           </Link>
 
           {github && (
@@ -49,9 +53,34 @@ function Hero() {
               href={github.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center rounded-lg border border-border px-6 py-3 text-sm font-semibold transition-colors duration-200 hover:border-accent hover:bg-surface"
+              aria-label="Abrir perfil de GitHub"
+              title="GitHub"
+              className="inline-flex size-11 shrink-0 items-center justify-center border border-border transition-colors duration-200 hover:border-accent hover:bg-surface"
             >
-              Ver GitHub
+              <img
+                src={githubIcon}
+                alt=""
+                aria-hidden="true"
+                className="size-5"
+              />
+            </a>
+          )}
+
+          {linkedin && (
+            <a
+              href={linkedin.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir perfil de LinkedIn"
+              title="LinkedIn"
+              className="inline-flex size-11 shrink-0 items-center justify-center border border-border transition-colors duration-200 hover:border-accent hover:bg-surface"
+            >
+              <img
+                src={linkedinIcon}
+                alt=""
+                aria-hidden="true"
+                className="size-5"
+              />
             </a>
           )}
         </div>

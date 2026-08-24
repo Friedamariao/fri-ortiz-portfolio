@@ -4,7 +4,7 @@ function ActivityCard({ activity }) {
   const isAvailable = activity.status === "available";
 
   return (
-    <article className="flex h-full flex-col rounded-xl border border-border bg-background p-6 transition-colors duration-200 hover:border-accent sm:p-7">
+    <article className="flex h-full flex-col rounded-none border border-border bg-background p-6 transition-colors duration-200 hover:border-accent sm:p-7">
       <div className="flex items-start justify-between gap-4">
         <p className="font-mono text-xs tracking-[0.16em] text-accent uppercase">
           Actividad {activity.number}

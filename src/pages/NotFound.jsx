@@ -24,7 +24,7 @@ function NotFound() {
 
       <Link
         to="/"
-        className="mt-10 inline-flex min-h-11 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
+        className="mt-10 inline-flex min-h-11 items-center justify-center rounded-none bg-accent px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
       >
         Volver al inicio
       </Link>
