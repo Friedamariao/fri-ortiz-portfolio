@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <title>Página no encontrada | Fri Ortiz</title>
+  </head>
+
+  <body>
+    <p>Redirigiendo al portafolio...</p>
+
+    <script>
+      const portfolioBase = "/fri-ortiz-portfolio/";
+      const requestedPath = window.location.pathname + window.location.search;
+
+      const destination =
+        portfolioBase + "#/not-found?from=" + encodeURIComponent(requestedPath);
+
+      window.location.replace(destination);
+    </script>
+
+    <noscript>
+      <p>
+        Esta página requiere JavaScript.
+        <a href="/fri-ortiz-portfolio/">Volver al portafolio</a>
+      </p>
+    </noscript>
+  </body>
+</html>
