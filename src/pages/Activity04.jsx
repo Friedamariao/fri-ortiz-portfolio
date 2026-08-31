@@ -162,7 +162,7 @@ function Activity04() {
               </div>
               <div>
                 <dt className="tracking-wider text-muted uppercase">Fecha</dt>
-                <dd className="mt-1">30.08.2026</dd>
+                <dd className="mt-1">31.08.2026</dd>
               </div>
               <div>
                 <dt className="tracking-wider text-muted uppercase">
@@ -184,7 +184,7 @@ function Activity04() {
               rel="noopener noreferrer"
               className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
-              Ver representación estática
+              Ver sitio estático
             </a>
 
             <a
@@ -192,7 +192,7 @@ function Activity04() {
               download="184346_act04.pdf"
               className="inline-flex min-h-11 items-center justify-center border border-border px-5 py-3 text-sm font-semibold transition-colors hover:border-accent hover:bg-surface"
             >
-              Descargar informe
+              Descargar reporte
             </a>
           </div>
         </div>
@@ -243,7 +243,11 @@ function Activity04() {
         </aside>
 
         <div className="space-y-24 lg:col-span-9">
-          <ActivitySection id="objetivo" number="01" title="Objetivo y escenario">
+          <ActivitySection
+            id="objetivo"
+            number="01"
+            title="Objetivo y escenario"
+          >
             <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
               <p>
                 El objetivo fue implementar y analizar, dentro de un laboratorio
@@ -265,8 +269,8 @@ function Activity04() {
               </p>
               <p className="mt-2 leading-7 text-muted">
                 La práctica utilizó una organización y credenciales ficticias,
-                permaneció en la dirección local 127.0.0.1 y no fue publicada
-                en Internet. La versión disponible aquí es únicamente una
+                permaneció en la dirección local 127.0.0.1 y no fue publicada en
+                Internet. La versión disponible aquí es únicamente una
                 representación estática sin envío de información.
               </p>
             </div>
@@ -276,8 +280,8 @@ function Activity04() {
             <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
               <p>
                 El portal se desarrolló con HTML y CSS e incluyó el nombre de la
-                organización, campos de usuario y contraseña, un botón de ingreso
-                y un mensaje que indicaba que la sesión había expirado.
+                organización, campos de usuario y contraseña, un botón de
+                ingreso y un mensaje que indicaba que la sesión había expirado.
               </p>
               <p>
                 Durante el laboratorio, el formulario utilizó el método HTTP
@@ -307,7 +311,11 @@ function Activity04() {
             />
           </ActivitySection>
 
-          <ActivitySection id="laboratorio" number="03" title="Configuración del laboratorio">
+          <ActivitySection
+            id="laboratorio"
+            number="03"
+            title="Configuración del laboratorio"
+          >
             <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
               <p>
                 La práctica se realizó en una máquina virtual con Kali Linux
@@ -344,13 +352,18 @@ function Activity04() {
             />
           </ActivitySection>
 
-          <ActivitySection id="ejecucion" number="04" title="Ejecución de Credential Harvester">
+          <ActivitySection
+            id="ejecucion"
+            number="04"
+            title="Ejecución de Credential Harvester"
+          >
             <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
               <p>
                 Credential Harvester es un módulo de SET que recibe y registra
                 los valores enviados desde formularios web. Para configurarlo se
-                seleccionaron Social Engineering Attacks, Website Attack Vectors,
-                Credential Harvester Attack Method y, finalmente, Custom Import.
+                seleccionaron Social Engineering Attacks, Website Attack
+                Vectors, Credential Harvester Attack Method y, finalmente,
+                Custom Import.
               </p>
             </div>
 
@@ -360,7 +373,8 @@ function Activity04() {
                   src: evidence06,
                   alt: "Pantalla inicial de Social-Engineer Toolkit.",
                   number: "06",
-                  caption: "Inicio de Social-Engineer Toolkit desde Kali Linux.",
+                  caption:
+                    "Inicio de Social-Engineer Toolkit desde Kali Linux.",
                 },
                 {
                   src: evidence07,
@@ -372,7 +386,8 @@ function Activity04() {
                   src: evidence08,
                   alt: "Menú de SET con Website Attack Vectors seleccionado.",
                   number: "08",
-                  caption: "Acceso a los vectores de ataque basados en sitios web.",
+                  caption:
+                    "Acceso a los vectores de ataque basados en sitios web.",
                 },
                 {
                   src: evidence09,
@@ -384,7 +399,8 @@ function Activity04() {
                   src: evidence10,
                   alt: "Menú de plantillas web con la opción Custom Import.",
                   number: "10",
-                  caption: "Selección de Custom Import para utilizar la página propia.",
+                  caption:
+                    "Selección de Custom Import para utilizar la página propia.",
                 },
                 {
                   src: evidence11,
@@ -404,7 +420,8 @@ function Activity04() {
                   src: evidence13,
                   alt: "Portal ficticio cargado desde la dirección local 127.0.0.1.",
                   number: "13",
-                  caption: "Página ficticia servida por SET dentro del laboratorio.",
+                  caption:
+                    "Página ficticia servida por SET dentro del laboratorio.",
                 },
                 {
                   src: evidence14,
@@ -431,7 +448,11 @@ function Activity04() {
             />
           </ActivitySection>
 
-          <ActivitySection id="flujo" number="05" title="Flujo de captura de información">
+          <ActivitySection
+            id="flujo"
+            number="05"
+            title="Flujo de captura de información"
+          >
             <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
               <p>
                 En el laboratorio, el navegador generó una petición HTTP POST
@@ -442,9 +463,9 @@ function Activity04() {
               </p>
               <p>
                 Esto representa una captura de credenciales, no la vulneración
-                de una contraseña. En la captura, el usuario proporciona el dato;
-                en la vulneración se intenta descubrirlo mediante técnicas como
-                fuerza bruta, diccionarios o tablas precalculadas.
+                de una contraseña. En la captura, el usuario proporciona el
+                dato; en la vulneración se intenta descubrirlo mediante técnicas
+                como fuerza bruta, diccionarios o tablas precalculadas.
               </p>
             </div>
 
@@ -457,7 +478,11 @@ function Activity04() {
             />
           </ActivitySection>
 
-          <ActivitySection id="indicadores" number="06" title="Indicadores de phishing">
+          <ActivitySection
+            id="indicadores"
+            number="06"
+            title="Indicadores de phishing"
+          >
             <ol className="divide-y divide-border border-y border-border">
               {indicators.map((indicator, index) => (
                 <li
@@ -473,14 +498,20 @@ function Activity04() {
             </ol>
           </ActivitySection>
 
-          <ActivitySection id="controles" number="07" title="Controles de seguridad">
+          <ActivitySection
+            id="controles"
+            number="07"
+            title="Controles de seguridad"
+          >
             <div className="grid gap-px border border-border bg-border md:grid-cols-2">
               {controls.map((control, index) => (
                 <article key={control.title} className="bg-background p-6">
                   <p className="font-mono text-xs text-accent">
                     {String(index + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="mt-4 text-lg font-semibold">{control.title}</h3>
+                  <h3 className="mt-4 text-lg font-semibold">
+                    {control.title}
+                  </h3>
                   <p className="mt-3 text-sm leading-7 text-muted">
                     {control.description}
                   </p>
@@ -524,12 +555,10 @@ function Activity04() {
                   <p className="font-mono text-[0.68rem] tracking-wider text-accent uppercase">
                     HTML
                   </p>
-                  <h3 className="mt-3 text-lg font-semibold">
-                    Representación estática
-                  </h3>
+                  <h3 className="mt-3 text-lg font-semibold">Sitio estático</h3>
                   <p className="mt-2 text-sm leading-6 text-muted">
-                    Copia visual segura del portal ficticio. No recibe ni
-                    transmite información.
+                    Copia visual del portal ficticio. No recibe ni transmite
+                    información.
                   </p>
                 </div>
                 <span className="mt-5 text-sm font-semibold">Abrir demo</span>
