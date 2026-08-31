@@ -52,4 +52,17 @@ export const activities = [
     technologies: ["Python", "pynput", "pywin32", "Callbacks"],
     visible: true,
   },
+  {
+    id: "activity-04",
+    number: "04",
+    title: "Una página demasiado convincente",
+    partialId: "partial-1",
+    description:
+      "Simulación controlada de ingeniería social para analizar la captura de información mediante una página web ficticia y Social-Engineer Toolkit.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-04",
+    technologies: ["Kali Linux", "SET", "HTTP POST", "HTML", "CSS"],
+    visible: true,
+  },
 ];
