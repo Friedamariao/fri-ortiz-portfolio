@@ -8,7 +8,7 @@ const commandResponses = {
   help: "Comandos disponibles: help, whoami, course, portfolio, sections, tech, contact, clear",
 
   whoami:
-    "Frieda María Ortiz López (Fri) — Estudiante de Ing. en Tecnologías de la Información, UPSLP",
+    "Frieda María Ortiz López (vöridunne) — Estudiante de Ing. en Tecnologías de la Información, UPSLP",
 
   course: "CNO IV — Seguridad Informática · Agosto–diciembre 2026",
 

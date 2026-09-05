@@ -1,7 +1,7 @@
 export const portfolio = {
   student: {
     fullName: "Frieda María Ortiz López",
-    alias: "Fri", //firedax could be a great alias 
+    alias: "vöridunne", //firedax could be a great alias
     program: "Ingeniería en Tecnologías de la Información",
     institution: "Universidad Politécnica de San Luis Potosí",
     semester: "7.º semestre",
