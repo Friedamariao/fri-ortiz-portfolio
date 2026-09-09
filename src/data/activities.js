@@ -73,7 +73,7 @@ export const activities = [
     description:
       "Walkthrough técnico de reconocimiento, enumeración y análisis de vulnerabilidades sobre la máquina SnakeOil.",
     status: "available",
-    statusLabel: "En desarrollo",
+    statusLabel: "Disponible",
     path: "/activities/project-01",
     technologies: ["Kali Linux", "Nmap", "Gobuster", "Burp Suite", "JWT"],
     visible: true,
