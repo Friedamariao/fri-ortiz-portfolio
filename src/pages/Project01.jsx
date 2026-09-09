@@ -21,8 +21,12 @@ const pageSections = [
   { id: "vulnerabilidades", label: "Vulnerabilidades" },
   { id: "autenticacion", label: "Registro y JWT" },
   { id: "explotacion", label: "Command injection" },
+  { id: "video", label: "Video demostrativo" },
+  { id: "recursos", label: "Recursos" },
   { id: "pendientes", label: "Próximos pasos" },
 ];
+
+const resourceBase = import.meta.env.BASE_URL + "resources/project-01";
 
 const evidenceGroups = {
   environment: [
@@ -168,6 +172,23 @@ function Project01() {
                 <dd className="mt-1">SnakeOil</dd>
               </div>
             </dl>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            <a
+              href="#video"
+              className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
+            >
+              Ver video
+            </a>
+
+            <a
+              href={resourceBase + "/184346_project_p1.pdf"}
+              download="184346_project_p1.pdf"
+              className="inline-flex min-h-11 items-center justify-center border border-border px-5 py-3 text-sm font-semibold transition-colors hover:border-accent hover:bg-surface"
+            >
+              Descargar reporte
+            </a>
           </div>
         </div>
       </header>
@@ -422,12 +443,80 @@ curl -i http://192.168.56.101:8080`}</CodeBlock>
             <EvidenceGrid items={evidenceGroups.exploitation} start={17} />
           </ActivitySection>
 
-          <ActivitySection id="pendientes" number="09" title="Próximos pasos">
-            <div className="grid gap-px border border-border bg-border sm:grid-cols-3">
+          <ActivitySection
+            id="video"
+            number="09"
+            title="Video demostrativo"
+          >
+            <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
+              <p>
+                Registro en video del walkthrough completo, desde el
+                reconocimiento inicial hasta la explotación de la
+                vulnerabilidad de command injection sobre SnakeOil.
+              </p>
+            </div>
+            <div className="mx-auto my-10 aspect-video w-full max-w-4xl border border-border bg-surface p-2 sm:p-3">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/6eKXOLh9rqI"
+                title="Video demostrativo del Proyecto 01: De la teoría a la práctica"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </ActivitySection>
+
+          <ActivitySection id="recursos" number="10" title="Recursos">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <a
+                href="https://youtu.be/6eKXOLh9rqI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex min-h-36 flex-col justify-between border border-border bg-background p-5 transition-colors duration-200 hover:border-accent hover:bg-surface"
+              >
+                <div>
+                  <p className="font-mono text-[0.68rem] tracking-wider text-accent uppercase">
+                    Video
+                  </p>
+                  <h3 className="mt-3 text-lg font-semibold">
+                    Demostración en YouTube
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-muted">
+                    Walkthrough completo del proyecto en formato de video.
+                  </p>
+                </div>
+                <span className="mt-5 text-sm font-semibold">
+                  Ver en YouTube
+                </span>
+              </a>
+
+              <a
+                href={resourceBase + "/184346_project_p1.pdf"}
+                download="184346_project_p1.pdf"
+                className="group flex min-h-36 flex-col justify-between border border-border bg-background p-5 transition-colors duration-200 hover:border-accent hover:bg-surface"
+              >
+                <div>
+                  <p className="font-mono text-[0.68rem] tracking-wider text-accent uppercase">
+                    PDF
+                  </p>
+                  <h3 className="mt-3 text-lg font-semibold">
+                    Informe final
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-muted">
+                    Documentación completa del proyecto, sus evidencias,
+                    análisis y conclusiones.
+                  </p>
+                </div>
+                <span className="mt-5 text-sm font-semibold">Descargar</span>
+              </a>
+            </div>
+          </ActivitySection>
+
+          <ActivitySection id="pendientes" number="11" title="Próximos pasos">
+            <div className="grid gap-px border border-border bg-border sm:grid-cols-1">
               {[
                 ["Walkthrough", "Completar explotación y postexplotación."],
-                ["Informe", "Incorporar la versión final descargable en PDF."],
-                ["Video", "Agregar la demostración publicada en YouTube."],
               ].map(([title, description]) => (
                 <article key={title} className="bg-background p-6">
                   <p className="font-mono text-xs tracking-wider text-accent uppercase">
