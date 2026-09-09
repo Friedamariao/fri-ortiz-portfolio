@@ -65,4 +65,17 @@ export const activities = [
     technologies: ["Kali Linux", "SET", "HTTP POST", "HTML", "CSS"],
     visible: true,
   },
+  {
+    id: "project-01",
+    number: "P1",
+    title: "De la teoría a la práctica",
+    partialId: "partial-1",
+    description:
+      "Walkthrough técnico de reconocimiento, enumeración y análisis de vulnerabilidades sobre la máquina SnakeOil.",
+    status: "available",
+    statusLabel: "En desarrollo",
+    path: "/activities/project-01",
+    technologies: ["Kali Linux", "Nmap", "Gobuster", "Burp Suite", "JWT"],
+    visible: true,
+  },
 ];
