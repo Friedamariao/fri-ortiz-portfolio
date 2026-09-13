@@ -13,11 +13,12 @@ export const navigationItems = [
     status: "available",
     end: false,
   },
-  {
-    id: "projects",
-    label: "Proyectos",
-    path: null,
-    status: "pending",
+    {
+    id: "hall-of-fame",
+    label: "Road to Hall of Fame",
+    path: "/road-to-hall-of-fame",
+    status: "available",
+    end: false,
   },
   {
     id: "certificates",

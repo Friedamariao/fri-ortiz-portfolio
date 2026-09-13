@@ -67,12 +67,12 @@ export const homeContent = {
       status: "Disponible",
     },
     {
-      id: "projects",
+      id: "hall-of-fame",
       number: "03",
-      name: "Proyectos",
+      name: "Road to Hall of Fame",
       description:
-        "Prácticas que sintetizan las competencias adquiridas a lo largo del curso.",
-      status: "Próximamente",
+        "Ruta de progreso de los laboratorios prácticos, con evidencia y documentación técnica de cada reto.",
+      status: "Disponible",
     },
     {
       id: "certificates",
