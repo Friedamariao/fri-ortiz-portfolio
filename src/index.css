@@ -149,7 +149,8 @@ svg {
 
     .terminal-session-dot,
     .terminal-typing-cursor,
-    .terminal-idle-cursor {
+    .terminal-idle-cursor,
+    .constellation-star-twinkle {
         animation: none !important;
     }
 
@@ -164,6 +165,7 @@ svg {
 }
 
 @keyframes terminal-session-pulse {
+
     0%,
     100% {
         opacity: 0.45;
@@ -177,6 +179,7 @@ svg {
 }
 
 @keyframes terminal-cursor-blink {
+
     0%,
     45% {
         opacity: 1;
@@ -192,6 +195,15 @@ svg {
     display: inline-block;
     transform-origin: center;
     animation: terminal-session-pulse 1.8s ease-in-out infinite;
+}
+
+/* Reuses terminal-session-pulse (same fade/scale) at a slower pace,
+    so a handful of the Road to Hall of Fame background stars read as
+   gently twinkling instead of static. */
+.constellation-star-twinkle {
+    display: inline-block;
+    transform-origin: center;
+    animation: terminal-session-pulse 3.6s ease-in-out infinite;
 }
 
 .terminal-typing-cursor {
