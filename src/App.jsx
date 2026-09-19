@@ -5,6 +5,7 @@ import Activity04 from "./pages/Activity04";
 import Activities from "./pages/Activities";
 import Project01 from "./pages/Project01";
 import RoadToHallOfFame from "./pages/RoadToHallOfFame";
+import FPT01 from "./pages/FPT01";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
@@ -17,7 +18,8 @@ function App() {
         <Route path="/activities/activity-03" element={<Activity03 />} />
         <Route path="/activities/activity-04" element={<Activity04 />} />
         <Route path="/activities/project-01" element={<Project01 />} />
-        <Route path="/road-to-hall-of-fame" element={<RoadToHallOfFame/>} />
+        <Route path="/road-to-hall-of-fame" element={<RoadToHallOfFame />} />
+        <Route path="/road-to-hall-of-fame/fpt-01" element={<FPT01 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </MainLayout>

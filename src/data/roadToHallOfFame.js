@@ -7,6 +7,11 @@
 //   2. Fill in title, description and path (its future detail page)
 //   3. Set pdfHref to that lab's individual report
 //
+// Note: if status is "unlocked" but path is still null, the node
+// shows the unlocked medal without a link (ConstellationNode guards
+// against this) rather than crashing — but the lab isn't really
+// "done" until path points to a real page.
+//
 // position.x / position.y are percentages (0-100) placing the node
 // inside the constellation canvas on desktop. On mobile the nodes
 // stack vertically instead, so position is ignored there.
@@ -25,13 +30,16 @@ export const roadToHallOfFameLabs = [
   {
     id: "lab-01",
     number: "01",
-    title: "File path traversal, simple case.",
+    title: "File Path Traversal: Simple Case",
     shortTitle: "FPT 01",
-    description: "Locked",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+    "Explotación del parámetro filename que se concatena sin validar, permitiendo leer /etc/passwd con ../../../etc/passwd.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-01",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-01/184346_fpt01.pdf",
+    pdfFilename: "184346_fpt01.pdf",
     position: { x: 14, y: 62 },
     iconPath: null,
   },
@@ -46,7 +54,7 @@ export const roadToHallOfFameLabs = [
     path: null,
     pdfHref: null,
     pdfFilename: null,
-    position: { x: 25, y: 24 },
+    position: { x: 20, y: 28 },
     iconPath: null,
   },
   {
@@ -59,7 +67,7 @@ export const roadToHallOfFameLabs = [
     path: null,
     pdfHref: null,
     pdfFilename: null,
-    position: { x: 44, y: 12 },
+    position: { x: 44, y: 20 },
     iconPath: null,
   },
   {
@@ -73,7 +81,7 @@ export const roadToHallOfFameLabs = [
     path: null,
     pdfHref: null,
     pdfFilename: null,
-    position: { x: 55, y: 50 },
+    position: { x: 50, y: 48 },
     iconPath: null,
   },
   {
@@ -86,7 +94,7 @@ export const roadToHallOfFameLabs = [
     path: null,
     pdfHref: null,
     pdfFilename: null,
-    position: { x: 74, y: 60 },
+    position: { x: 70, y: 60 },
     iconPath: null,
   },
   {
@@ -100,7 +108,7 @@ export const roadToHallOfFameLabs = [
     path: null,
     pdfHref: null,
     pdfFilename: null,
-    position: { x: 92, y: 40 },
+    position: { x: 92, y: 45 },
     iconPath: null,
   },
 ];
