@@ -72,7 +72,7 @@ function ConstellationNode({ lab, layout }) {
         <div
             ref={nodeRef}
             style={{ ...positionStyle, ...revealStyle }}
-            className="group relative flex w-32 flex-col items-center gap-3 text-center"
+            className="group relative z-0 flex w-32 flex-col items-center gap-3 text-center hover:z-20 focus-within:z-20"
         >
             {isAbsolute && (
                 <div
@@ -99,7 +99,7 @@ function ConstellationNode({ lab, layout }) {
                     </span>
                 </Link>
             ) : (
-                <div className="flex flex-col items-center gap-0.5">
+                <div className="flex flex-col items-center gap-1">
                     <Medal status={isUnlocked ? "unlocked" : "locked"} size={MEDAL_SIZE} />
                     <span
                         className={
