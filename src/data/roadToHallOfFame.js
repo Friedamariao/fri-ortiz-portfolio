@@ -33,7 +33,7 @@ export const roadToHallOfFameLabs = [
     title: "File Path Traversal: Simple Case",
     shortTitle: "FPT 01",
     description:
-    "Explotación del parámetro filename que se concatena sin validar, permitiendo leer /etc/passwd con ../../../etc/passwd.",
+      "Lectura arbitraria de /etc/passwd manipulando el parámetro filename.",
     status: "unlocked",
     path: "/road-to-hall-of-fame/fpt-01",
     pdfHref:
@@ -46,27 +46,32 @@ export const roadToHallOfFameLabs = [
   {
     id: "lab-02",
     number: "02",
-    title:
-      "File path traversal, traversal sequences blocked with absolute path bypass.",
+    title: "File Path Traversal: Traversal Sequences Blocked with Absolute Path Bypass",
     shortTitle: "FPT 02",
-    description: "Locked",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+      "Bypass de un filtro anti-../ mediante ruta absoluta: filename=/etc/passwd evade la validación por completo.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-02",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-02/184346_fpt02.pdf",
+    pdfFilename: "184346_fpt02.pdf",
     position: { x: 20, y: 28 },
     iconPath: null,
   },
   {
     id: "lab-03",
     number: "03",
-    title: "File path traversal, traversal sequences stripped non-recursively",
+    title: "File Path Traversal: Traversal Sequences Stripped Non-Recursively",
     shortTitle: "FPT 03",
-    description: "Locked",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+      "Bypass de un filtro no recursivo con secuencias anidadas: ....// se recompone en ../ tras la eliminación.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-03",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-03/184346_fpt03.pdf",
+    pdfFilename: "184346_fpt03.pdf",
     position: { x: 44, y: 20 },
     iconPath: null,
   },
