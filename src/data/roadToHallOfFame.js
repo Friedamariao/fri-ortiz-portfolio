@@ -79,13 +79,16 @@ export const roadToHallOfFameLabs = [
     id: "lab-04",
     number: "04",
     title:
-      "File path traversal, traversal sequences stripped with superfluous URL-decode",
+      "File Path Traversal: Traversal Sequences Stripped with Superfluous URL-Decode",
     shortTitle: "FPT 04",
-    description: "Locked",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+      "Bypass por doble codificación URL: ..%252f sobrevive la validación y se decodifica a ../ después del filtro.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-04",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-04/184346_fpt04.pdf",
+    pdfFilename: "184346_fpt04.pdf",
     position: { x: 50, y: 48 },
     iconPath: null,
   },
