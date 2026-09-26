@@ -12,8 +12,8 @@ export const partials = [
     number: "02",
     name: "Parcial II",
     topic: "Sistemas de gestión de la seguridad",
-    status: "pending",
-    statusLabel: "Próximamente",
+    status: "active",
+    statusLabel: "En desarrollo",
   },
   {
     id: "partial-3",
@@ -76,6 +76,19 @@ export const activities = [
     statusLabel: "Disponible",
     path: "/activities/project-01",
     technologies: ["Kali Linux", "Nmap", "Gobuster", "Burp Suite", "JWT"],
+    visible: true,
+  },
+  {
+    id: "activity-14",
+    number: "14",
+    title: "Ciberseguridad en una mirada",
+    partialId: "partial-2",
+    description:
+      "Infografía profesional para el curso Introducción a la Ciberseguridad de Cisco Networking Academy, sobre protección de datos y privacidad: riesgos, capas de seguridad y cómo mitigarlos.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-14",
+    technologies: ["Infografía", "Cisco NetAcad"],
     visible: true,
   },
 ];
