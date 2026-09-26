@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Activity03 from "./pages/Activity03";
 import Activity04 from "./pages/Activity04";
+import Activity14 from "./pages/Activity14";
 import Activities from "./pages/Activities";
 import Project01 from "./pages/Project01";
 import RoadToHallOfFame from "./pages/RoadToHallOfFame";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/activities" element={<Activities />} />
         <Route path="/activities/activity-03" element={<Activity03 />} />
         <Route path="/activities/activity-04" element={<Activity04 />} />
+        <Route path="/activities/activity-14" element={<Activity14 />} />
         <Route path="/activities/project-01" element={<Project01 />} />
         <Route path="/road-to-hall-of-fame" element={<RoadToHallOfFame />} />
         <Route path="/road-to-hall-of-fame/fpt-01" element={<FPT01 />} />
