@@ -6,6 +6,7 @@ import evidence03 from "../assets/road-to-hall-of-fame/fpt-05/ev-03.png";
 import evidence04 from "../assets/road-to-hall-of-fame/fpt-05/ev-04.png";
 import evidence05 from "../assets/road-to-hall-of-fame/fpt-05/ev-05.png";
 import evidence06 from "../assets/road-to-hall-of-fame/fpt-05/ev-06.png";
+import evidence07 from "../assets/road-to-hall-of-fame/fpt-05/ev-07.png";
 import ActivityFigure from "../components/activities/ActivityFigure";
 import ActivitySection from "../components/activities/ActivitySection";
 
@@ -373,6 +374,14 @@ function FPT05() {
                             </p>
                         </div>
 
+                        <ActivityFigure
+                            src={evidence03}
+                            alt="Historial de peticiones HTTP mostrando varias solicitudes GET al endpoint /image con la ruta completa /var/www/images/ en filename."
+                            number="03"
+                            caption='Envío de la petición a Repeater desde el menú contextual ("Send to Repeater").'
+                            className="max-w-4xl"
+                        />
+
                         <div className="max-w-3xl space-y-5 text-base leading-8 text-muted sm:text-lg">
                             <p>
                                 En Repeater se visualiza la solicitud original sin
@@ -385,9 +394,9 @@ function FPT05() {
                         </div>
 
                         <ActivityFigure
-                            src={evidence03}
+                            src={evidence04}
                             alt="Módulo Repeater de Burp Suite con la petición original sin modificar, filename=/var/www/images/15.jpg."
-                            number="03"
+                            number="04"
                             caption="Petición original en Repeater, con la ruta completa esperada por la aplicación."
                             className="max-w-4xl"
                         />
@@ -416,11 +425,11 @@ function FPT05() {
                         </div>
 
                         <ActivityFigure
-                            src={evidence04}
+                            src={evidence05}
                             alt={
                                 'Respuesta 400 Bad Request de Burp Suite con el mensaje "Missing parameter \'filename\'" al enviar la ruta sin el prefijo esperado.'
                             }
-                            number="04"
+                            number="05"
                             caption={
                                 'Ruta sin el prefijo esperado rechazada: 400 Bad Request, "Missing parameter \'filename\'".'
                             }
@@ -446,9 +455,9 @@ function FPT05() {
                         </div>
 
                         <ActivityFigure
-                            src={evidence05}
+                            src={evidence06}
                             alt="Respuesta HTTP 200 OK de Burp Suite mostrando el contenido de /etc/passwd tras enviar el prefijo válido seguido de secuencias de traversal."
-                            number="05"
+                            number="06"
                             caption="Respuesta 200 OK con /etc/passwd, evadiendo la validación de prefijo con secuencias de traversal."
                             className="max-w-4xl"
                         />
@@ -463,9 +472,9 @@ function FPT05() {
                         </div>
 
                         <ActivityFigure
-                            src={evidence06}
+                            src={evidence07}
                             alt='Instancia del laboratorio de PortSwigger con la etiqueta del reto actualizada a "Solved".'
-                            number="06"
+                            number="07"
                             caption='Estado final del laboratorio: "Solved".'
                             className="max-w-4xl"
                         />
