@@ -95,13 +95,16 @@ export const roadToHallOfFameLabs = [
   {
     id: "lab-05",
     number: "05",
-    title: "File path traversal, validation of start of path",
+    title: "File Path Traversal: Validation of Start of Path",
     shortTitle: "FPT 05",
-    description: "Locked.",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+      "Bypass de una validación startsWith(): /var/www/images/../../../etc/passwd cumple el prefijo y sigue con traversal.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-05",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-05/184346_fpt05.pdf",
+    pdfFilename: "184346_fpt05.pdf",
     position: { x: 70, y: 60 },
     iconPath: null,
   },
