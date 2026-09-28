@@ -148,12 +148,14 @@ export const activities = [
   {
     id: "activity-12",
     number: "12",
-    title: "File Path Traversal: Validation of File Extension with null byte bypass",
+    title:
+      "File Path Traversal: Validation of File Extension with Null Byte Bypass",
     partialId: "partial-2",
-    description:"Actividad 12 en prepraración...",
-    status: "pending",
-    statusLabel: "Pendiente",
-    path: "null",
+    description:
+      "Bypass de una validación .png mediante null byte injection: %00 separa la extensión de la ruta real antes de resolverse.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/road-to-hall-of-fame/fpt-06",
     technologies: ["Burp Suite", "PortSwigger Web Security Academy"],
     visible: true,
   },

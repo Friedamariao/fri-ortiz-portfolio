@@ -11,6 +11,7 @@ import FPT02 from "./pages/FPT02";
 import FPT03 from "./pages/FPT03";
 import FPT04 from "./pages/FPT04";
 import FPT05 from "./pages/FPT05";
+import FPT06 from "./pages/FPT06";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/road-to-hall-of-fame/fpt-03" element={<FPT03 />} />
         <Route path="/road-to-hall-of-fame/fpt-04" element={<FPT04 />} />
         <Route path="/road-to-hall-of-fame/fpt-05" element={<FPT05 />} />
+        <Route path="/road-to-hall-of-fame/fpt-06" element={<FPT06 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </MainLayout>
