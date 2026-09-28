@@ -112,13 +112,16 @@ export const roadToHallOfFameLabs = [
     id: "lab-06",
     number: "06",
     title:
-      "File path traversal, validation of file extension with null byte bypass",
+      "File Path Traversal: Validation of File Extension with Null Byte Bypass",
     shortTitle: "FPT 06",
-    description: "Locked.",
-    status: "locked",
-    path: null,
-    pdfHref: null,
-    pdfFilename: null,
+    description:
+      "Bypass de una validación .png mediante null byte injection: %00 separa la extensión de la ruta real antes de resolverse.",
+    status: "unlocked",
+    path: "/road-to-hall-of-fame/fpt-06",
+    pdfHref:
+      import.meta.env.BASE_URL +
+      "resources/road-to-hall-of-fame/fpt-06/184346_fpt06.pdf",
+    pdfFilename: "184346_fpt06.pdf",
     position: { x: 92, y: 45 },
     iconPath: null,
   },
