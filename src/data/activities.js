@@ -160,6 +160,19 @@ export const activities = [
     visible: true,
   },
   {
+    id: "activity-13",
+    number: "13",
+    title: "Red team report: pentesting de My File Server 1",
+    partialId: "partial-2",
+    description:
+      "Informe técnico de pentesting de caja negra sobre My File Server: 1, con metodología PTES, análisis de impacto bajo el modelo CIA y recomendaciones de remediación.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-13",
+    technologies: ["Nmap", "Nikto", "smbmap", "SSH", "DirtyCOW"],
+    visible: true,
+  },
+  {
     id: "activity-14",
     number: "14",
     title: "Ciberseguridad en una mirada",
