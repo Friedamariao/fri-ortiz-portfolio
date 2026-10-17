@@ -4,7 +4,7 @@ import ActivitySection from "../components/activities/ActivitySection";
 import ResourceLink from "../components/activities/ResourceLink";
 
 const resourceBase = import.meta.env.BASE_URL + "resources/project-02";
-const zipFileName = "OrtizLopezFriedaMaria-PR03.zip";
+const zipFileName = "OrtizLopezFriedaMaria-PR02.zip";
 
 const pageSections = [
     { id: "introduccion", label: "Introducción" },
