@@ -185,4 +185,17 @@ export const activities = [
     technologies: ["Infografía", "Cisco NetAcad"],
     visible: true,
   },
+  {
+    id: "project-02",
+    number: "de Proyecto",
+    title: "Blindando la información",
+    partialId: "partial-2",
+    description:
+      "Contexto del laboratorio INTERAFAS-LAB y paquete de entrega del proyecto de gobernanza y cumplimiento: informe ofensivo, ISO/IEC 27001, comunicación de crisis y respuesta a incidentes.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/project-02",
+    technologies: ["INTERAFAS-LAB", "ISO/IEC 27001", "CISA Playbooks", "OWASP"],
+    visible: true,
+  },
 ];
