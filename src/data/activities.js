@@ -198,4 +198,17 @@ export const activities = [
     technologies: ["INTERAFAS-LAB", "ISO/IEC 27001", "CISA Playbooks", "OWASP"],
     visible: true,
   },
+  {
+    id: "activity-15",
+    number: "15",
+    title: "La fotografía como testigo",
+    partialId: "partial-3",
+    description:
+      "Análisis forense de metadatos con ExifTool sobre un documento de INTERPOL y una fotografía con datos GPS: extracción, geolocalización en Google Maps y eliminación/verificación de metadatos.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-15",
+    technologies: ["ExifTool", "PowerShell", "Google Maps"],
+    visible: true,
+  },
 ];
