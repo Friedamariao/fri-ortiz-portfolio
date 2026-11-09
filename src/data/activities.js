@@ -211,4 +211,17 @@ export const activities = [
     technologies: ["ExifTool", "PowerShell", "Google Maps"],
     visible: true,
   },
+  {
+    id: "activity-16",
+    number: "16",
+    title: "La verdad en los bits",
+    partialId: "partial-3",
+    description:
+      "Adquisición forense de una memoria USB con FTK Imager: imagen bit a bit en formato Raw (dd), verificación de integridad por hash y análisis del proceso.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-16",
+    technologies: ["FTK Imager", "Hashing (MD5/SHA-1)"],
+    visible: true,
+  },
 ];
