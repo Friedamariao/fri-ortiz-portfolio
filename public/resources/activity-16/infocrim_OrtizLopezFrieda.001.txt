@@ -1,0 +1,49 @@
+﻿Created By AccessData® FTK® Imager 4.3.1.1 
+
+Case Information: 
+Acquired using: ADI4.3.1.1
+Case Number: InfoCrim-01_21.11.2023
+Evidence Number: 00 (Original Adq)
+Unique description: CNO IV - análisis de incidente de fraude bancario. 
+Examiner: Ortiz López Frieda María
+Notes: Adquisición realizada en LIF de la UPSLP
+
+--------------------------------------------------------------
+
+Information for C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Physical
+[Drive Geometry]
+ Cylinders: 949
+ Tracks per Cylinder: 255
+ Sectors per Track: 63
+ Bytes per Sector: 512
+ Sector Count: 15,249,408
+[Physical Drive Information]
+ Drive Model: Kingston DataTraveler 2.0 USB Device
+ Drive Serial Number: 5B0FEC504499
+ Drive Interface Type: USB
+ Removable drive: True
+ Source data size: 7446 MB
+ Sector count:    15249408
+[Computed Hashes]
+ MD5 checksum:    8686d78a8e3313d990e9fed3f8e34d94
+ SHA1 checksum:   d414fa5fb686b3832bac234ce45eb07a40c734c8
+
+Image Information:
+ Acquisition started:   Sun Nov  8 01:20:18 2026
+ Acquisition finished:  Sun Nov  8 01:25:29 2026
+ Segment list:
+  C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda.001
+  C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda.002
+  C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda.003
+  C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda.004
+  C:\Users\usuario\Documents\UPSLP\Septimo Semestre\CNO IV - Seguridad Informatica (T37A)\Parcial 3\Act16\InfoCrim13\infocrim_OrtizLopezFrieda.005
+
+Image Verification Results:
+ Verification started:  Sun Nov  8 01:25:30 2026
+ Verification finished: Sun Nov  8 01:26:25 2026
+ MD5 checksum:    8686d78a8e3313d990e9fed3f8e34d94 : verified
+ SHA1 checksum:   d414fa5fb686b3832bac234ce45eb07a40c734c8 : verified
