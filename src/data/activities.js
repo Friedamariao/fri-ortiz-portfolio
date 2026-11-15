@@ -224,4 +224,43 @@ export const activities = [
     technologies: ["FTK Imager", "Hashing (MD5/SHA-1)"],
     visible: true,
   },
+  {
+    id: "activity-17",
+    number: "17",
+    title: "La memoria del crimen",
+    partialId: "partial-3",
+    description:
+      "Análisis forense de memoria volátil con Volatility sobre un volcado de RAM: perfil del sistema, credenciales, conexiones de red, procesos, Registro, correos y un ransomware disfrazado de componente de VMware.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-17",
+    technologies: ["Volatility", "Command Line", "PowerShell"],
+    visible: true,
+  },
+  {
+    id: "activity-18",
+    number: "18",
+    title: "Pendiente",
+    partialId: "partial-3",
+    description:
+      "Pendiente.",
+    status: "pending",
+    statusLabel: "Pendiente",
+    path: "/activities/activity-18",
+    technologies: ["Pendiente"],
+    visible: false,
+  },
+  {
+    id: "activity-19",
+    number: "19",
+    title: "Los primeros minutos cuentan",
+    partialId: "partial-3",
+    description:
+      "Adquisición forense en caliente de un sistema Windows con CMD y PowerShell: procesos, servicios, sesiones, red, historial de comandos, tareas programadas, logs y árbol de archivos.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-19",
+    technologies: ["CMD", "PowerShell", "NetUsers"],
+    visible: true,
+  },
 ];
