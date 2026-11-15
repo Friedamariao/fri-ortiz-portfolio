@@ -481,7 +481,7 @@ function Activity16() {
                         </div>
 
                         <div className="mt-8 hidden overflow-x-auto border-y border-border md:block">
-                            <table className="w-full min-w-[48rem] text-left">
+                            <table className="w-full min-w-[3xl] text-left">
                                 <thead>
                                     <tr className="border-b border-border">
                                         <th className="py-3 pr-4 font-mono text-xs tracking-wider text-muted uppercase">
