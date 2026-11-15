@@ -240,15 +240,15 @@ export const activities = [
   {
     id: "activity-18",
     number: "18",
-    title: "Pendiente",
+    title: "La huella digital de un cibercriminal",
     partialId: "partial-3",
     description:
-      "Pendiente.",
-    status: "pending",
-    statusLabel: "Pendiente",
+      "Análisis forense con Autopsy de la imagen del caso Hacking Case del NIST: sistema operativo, fechas de instalación y apagado, zona horaria, propietario, equipo, dominio y cuentas.",
+    status: "available",
+    statusLabel: "Disponible",
     path: "/activities/activity-18",
-    technologies: ["Pendiente"],
-    visible: false,
+    technologies: ["Autopsy", "Registro de Windows", "PowerShell"],
+    visible: true,
   },
   {
     id: "activity-19",
