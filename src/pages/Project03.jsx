@@ -17,15 +17,19 @@ const pageSections = [
 
 const resourceBase = import.meta.env.BASE_URL + "resources/project-03";
 
-const evidenceModules = import.meta.glob("../assets/project-03/*.png", {
-    eager: true,
-    query: "?url",
-    import: "default",
-});
+const evidenceModules = import.meta.glob(
+    "../assets/project-03/*.{png,PNG,jpg,jpeg}",
+    {
+        eager: true,
+        query: "?url",
+        import: "default",
+    },
+);
 
 function evidenceSrc(key) {
+    const pattern = new RegExp("/" + key + "\\.(png|jpe?g)$", "i");
     const match = Object.entries(evidenceModules).find(([path]) =>
-        path.endsWith("/" + key + ".png"),
+        pattern.test(path),
     );
     return match ? match[1] : "";
 }
