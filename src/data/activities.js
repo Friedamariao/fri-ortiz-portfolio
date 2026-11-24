@@ -263,4 +263,17 @@ export const activities = [
     technologies: ["CMD", "PowerShell", "NetUsers"],
     visible: true,
   },
+  {
+    id: "project-03",
+    number: "de Proyecto",
+    title: "Operación Narcos: expediente Kowhai",
+    partialId: "partial-3",
+    description:
+      "Análisis forense con Autopsy de la imagen Narcos-1 del escenario 2019 Narcos: artefactos del sistema, metadatos, programas instalados y una hipótesis sobre la relación del equipo con los hechos investigados.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/project-03",
+    technologies: ["Autopsy", "PowerShell", "Digital Corpora"],
+    visible: true,
+  },
 ];

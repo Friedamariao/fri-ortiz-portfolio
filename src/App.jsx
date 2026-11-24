@@ -12,7 +12,7 @@ import Activity19 from "./pages/Activity19";
 import Activities from "./pages/Activities";
 import Project01 from "./pages/Project01";
 import Project02 from "./pages/Project02";
-// import Project03 from "./pages/Project03";
+import Project03 from "./pages/Project03";
 import RoadToHallOfFame from "./pages/RoadToHallOfFame";
 import FPT01 from "./pages/FPT01";
 import FPT02 from "./pages/FPT02";
@@ -40,7 +40,7 @@ function App() {
         <Route path="/activities/activity-19" element={<Activity19 />} />
         <Route path="/activities/project-01" element={<Project01 />} />
         <Route path="/activities/project-02" element={<Project02 />} />
-        {/* <Route path="/activities/project-03" element={<Project03 />} /> */}
+        <Route path="/activities/project-03" element={<Project03 />} />
         <Route path="/road-to-hall-of-fame" element={<RoadToHallOfFame />} />
         <Route path="/road-to-hall-of-fame/fpt-01" element={<FPT01 />} />
         <Route path="/road-to-hall-of-fame/fpt-02" element={<FPT02 />} />
