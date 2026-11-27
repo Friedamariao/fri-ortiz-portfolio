@@ -13,8 +13,31 @@ const totalItems = indexGroups.reduce(
   0,
 );
 
-const linkClassName =
-  "inline-flex min-h-11 items-center font-semibold text-accent transition-colors hover:text-accent-hover";
+const downloadButtonClassName =
+  "inline-flex min-h-11 items-center justify-center gap-2 bg-accent px-4 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-accent-hover";
+
+const viewButtonClassName =
+  "inline-flex min-h-11 items-center justify-center border border-border px-4 py-2.5 text-sm font-semibold transition-colors hover:border-accent hover:bg-surface";
+
+function DownloadIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 3v12" />
+      <path d="m7 10 5 5 5-5" />
+      <path d="M5 21h14" />
+    </svg>
+  );
+}
 
 function IndexRow({ item }) {
   const pageHref = activityPaths[item.activityId];
@@ -32,33 +55,28 @@ function IndexRow({ item }) {
         {item.title}
       </h3>
 
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-sm">
-        <Link
-          to={pageHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={linkClassName}
-        >
-          Ver página
-          <span className="sr-only">
-            {" "}
-            de {item.code} (se abre en una pestaña nueva)
-          </span>
-        </Link>
-
+      <div className="flex flex-wrap items-center gap-3">
         <a
           href={fileHref}
           download={fileName}
           target="_blank"
           rel="noopener noreferrer"
-          className={linkClassName}
+          aria-label={`Descargar ${fileType} de ${item.code} (se abre en una pestaña nueva)`}
+          className={downloadButtonClassName}
         >
-          Descargar {fileType}
-          <span className="sr-only">
-            {" "}
-            de {item.code} (se abre en una pestaña nueva)
-          </span>
+          <DownloadIcon />
+          {fileType}
         </a>
+
+        <Link
+          to={pageHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Ver la página de ${item.code} (se abre en una pestaña nueva)`}
+          className={viewButtonClassName}
+        >
+          Ver página
+        </Link>
       </div>
     </li>
   );

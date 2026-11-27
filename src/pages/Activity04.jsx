@@ -188,8 +188,8 @@ function Activity04() {
             </a>
 
             <a
-              href={resourceBase + "/184346_act04.pdf"}
-              download="184346_act04.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-Act04.pdf"}
+              download="OrtizLopezFriedaMaría-Act04.pdf"
               className="inline-flex min-h-11 items-center justify-center border border-border px-5 py-3 text-sm font-semibold transition-colors hover:border-accent hover:bg-surface"
             >
               Descargar reporte
@@ -565,8 +565,8 @@ function Activity04() {
               </a>
 
               <a
-                href={resourceBase + "/184346_act04.pdf"}
-                download="184346_act04.pdf"
+                href={resourceBase + "/OrtizLopezFriedaMaría-Act04.pdf"}
+                download="OrtizLopezFriedaMaría-Act04.pdf"
                 className="group flex min-h-36 flex-col justify-between border border-border bg-background p-5 transition-colors duration-200 hover:border-accent hover:bg-surface"
               >
                 <div>

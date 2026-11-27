@@ -281,8 +281,8 @@ function Activity16() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_act16.pdf"}
-                            download="184346_act16.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act16.pdf"}
+                            download="OrtizLopezFriedaMaría-Act16.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -588,11 +588,11 @@ function Activity16() {
                     <ActivitySection id="recursos" number="09" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/184346_act16.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-Act16.pdf"}
                                 type="PDF"
                                 title="Informe forense"
                                 description="Procedimiento completo, preguntas, resultados, análisis y conclusiones."
-                                download="184346_act16.pdf"
+                                download="OrtizLopezFriedaMaría-Act16.pdf"
                             />
                             <ResourceLink
                                 href={resourceBase + "/infocrim_OrtizLopezFrieda.001.txt"}

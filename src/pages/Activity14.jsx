@@ -113,12 +113,12 @@ const checklist = [
 
 const resources = [
     {
-        href: resourceBase + "/184346_act14.pdf",
+        href: resourceBase + "/OrtizLopezFriedaMaría-Act14.pdf",
         type: "PDF",
         title: "Infografía completa",
         description:
             "Versión entregable en formato vertical, con el esquema de capas, la tabla de riesgos y las reglas de oro.",
-        download: "184346_act14.pdf",
+        download: "OrtizLopezFriedaMaría-Act14.pdf",
     },
 ];
 
@@ -215,8 +215,8 @@ function Activity14() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_act14.pdf"}
-                            download="184346_act14.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act14.pdf"}
+                            download="OrtizLopezFriedaMaría-Act14.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar infografía

@@ -275,8 +275,8 @@ function Project01() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={resourceBase + "/184346_project_p1.pdf"}
-              download="184346_project_p1.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-PR01.pdf"}
+              download="OrtizLopezFriedaMaría-PR01.pdf"
               className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
               Descargar informe
@@ -1113,8 +1113,8 @@ app.config['JWT_SECRET_KEY'] = 'NOreasonableDOUBTthisPASSWORDisGOOD'`}</CodeBloc
               </div>
 
               <ResourceLink
-                href={resourceBase + "/184346_project_p1.pdf"}
-                download="184346_project_p1.pdf"
+                href={resourceBase + "/OrtizLopezFriedaMaría-PR01.pdf"}
+                download="OrtizLopezFriedaMaría-PR01.pdf"
                 type="PDF"
                 title="Informe completo"
                 description="Documentación completa del proyecto, con todas las evidencias, el análisis técnico y la conclusión."

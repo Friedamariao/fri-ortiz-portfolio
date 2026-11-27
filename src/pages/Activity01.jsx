@@ -514,8 +514,8 @@ function Activity01() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={resourceBase + "/184346_act01.pdf"}
-              download="184346_act01.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-Act01.pdf"}
+              download="OrtizLopezFriedaMaría-Act01.pdf"
               className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
               Descargar informe
@@ -788,11 +788,11 @@ function Activity01() {
           <ActivitySection id="recursos" number="09" title="Recursos">
             <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
               <ResourceLink
-                href={resourceBase + "/184346_act01.pdf"}
+                href={resourceBase + "/OrtizLopezFriedaMaría-Act01.pdf"}
                 type="PDF"
                 title="Informe final"
                 description="Introducción, línea del tiempo, análisis técnico, impacto bajo el modelo CIA, costo del ataque, conclusiones y referencias."
-                download="184346_act01.pdf"
+                download="OrtizLopezFriedaMaría-Act01.pdf"
               />
             </div>
           </ActivitySection>
