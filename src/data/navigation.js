@@ -21,10 +21,11 @@ export const navigationItems = [
     end: false,
   },
   {
-    id: "certificates",
-    label: "Certificados",
-    path: null,
-    status: "pending",
+    id: "portfolio-index",
+    label: "Índice-Portafolio",
+    path: "/indice-portafolio",
+    status: "available",
+    end: false,
   },
   {
     id: "contact",

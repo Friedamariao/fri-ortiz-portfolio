@@ -75,12 +75,12 @@ export const homeContent = {
       status: "Disponible",
     },
     {
-      id: "certificates",
+      id: "portfolio-index",
       number: "04",
-      name: "Certificados",
+      name: "Índice-Portafolio",
       description:
-        "Credenciales y formación complementaria relacionada con el área.",
-      status: "Próximamente",
+        "Índice de las 18 actividades y proyectos que se evalúan, con enlace a cada página y a su informe en PDF.",
+      status: "Disponible",
     },
   ],
 

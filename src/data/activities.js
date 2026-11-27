@@ -27,6 +27,19 @@ export const partials = [
 
 export const activities = [
   {
+    id: "activity-01",
+    number: "01",
+    title: "NotPetya – Maersk, 2017",
+    partialId: "partial-1",
+    description:
+      "Análisis en equipo de un ciberataque real y su impacto empresarial: contexto del ataque NotPetya a Maersk, tabla técnica, evaluación bajo el modelo CIA y cálculo del costo con el marco económico de Adrian Mizzi.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-01",
+    technologies: ["NotPetya", "MITRE ATT&CK", "Modelo CIA", "ROISI"],
+    visible: true,
+  },
+  {
     id: "activity-02",
     number: "02",
     title: "Aquí empieza mi portafolio",
