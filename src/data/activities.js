@@ -5,7 +5,7 @@ export const partials = [
     name: "Parcial I",
     topic: "Fundamentos de ciberseguridad",
     status: "active",
-    statusLabel: "En desarrollo",
+    statusLabel: "Completado",
   },
   {
     id: "partial-2",
@@ -13,15 +13,15 @@ export const partials = [
     name: "Parcial II",
     topic: "Sistemas de gestión de la seguridad",
     status: "active",
-    statusLabel: "En desarrollo",
+    statusLabel: "Completado",
   },
   {
     id: "partial-3",
     number: "03",
     name: "Parcial III",
     topic: "Temas actuales en seguridad informática",
-    status: "pending",
-    statusLabel: "Próximamente",
+    status: "active",
+    statusLabel: "Completado",
   },
 ];
 
@@ -80,7 +80,7 @@ export const activities = [
   },
   {
     id: "project-01",
-    number: "de Proyecto",
+    number: "01",
     title: "De la teoría a la práctica",
     partialId: "partial-1",
     description:
@@ -200,7 +200,7 @@ export const activities = [
   },
   {
     id: "project-02",
-    number: "de Proyecto",
+    number: "02",
     title: "Blindando la información",
     partialId: "partial-2",
     description:
@@ -278,7 +278,7 @@ export const activities = [
   },
   {
     id: "project-03",
-    number: "de Proyecto",
+    number: "03",
     title: "Operación Narcos: expediente Kowhai",
     partialId: "partial-3",
     description:

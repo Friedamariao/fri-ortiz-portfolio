@@ -1,5 +1,15 @@
 import { portfolio } from "../../data/portfolio";
-import { Link } from "react-router-dom";
+
+function scrollToTop() {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  window.scrollTo({
+    top: 0,
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+}
 
 function Footer() {
   const { student, course, site, socialLinks } = portfolio;
@@ -33,12 +43,13 @@ function Footer() {
               </a>
             ))}
 
-            <Link
-              to="/#inicio"
-              className="min-h-11 content-center text-sm font-semibold underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+            <button
+              type="button"
+              onClick={scrollToTop}
+              className="min-h-11 cursor-pointer content-center text-sm font-semibold underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
             >
               Volver arriba
-            </Link>
+            </button>
           </div>
 
           <div className="font-mono text-[0.7rem] leading-6 tracking-wider text-muted uppercase md:text-right">

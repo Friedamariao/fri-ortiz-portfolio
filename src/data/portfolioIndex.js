@@ -80,7 +80,7 @@ export const indexGroups = [
         code: "Act.12",
         activityId: "activity-12",
         title:
-          "Road to hall of fame (Lab File Path traversal - validation of file extensión with null byte bypass)",
+          "Road to hall of fame (Lab File Path traversal - validation of file extension with null byte bypass)",
         file: "road-to-hall-of-fame/fpt-06/OrtizLopezFriedaMaría-Act12.pdf",
       },
       {

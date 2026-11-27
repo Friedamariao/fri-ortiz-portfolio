@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 
 function ActivityCard({ activity }) {
   const isAvailable = activity.status === "available";
+  const kindLabel = activity.id.startsWith("project-")
+    ? "Proyecto"
+    : "Actividad";
 
   return (
     <article className="flex h-full flex-col rounded-none border border-border bg-background p-6 transition-colors duration-200 hover:border-accent sm:p-7">
       <div className="flex items-start justify-between gap-4">
         <p className="font-mono text-xs tracking-[0.16em] text-accent uppercase">
-          Actividad {activity.number}
+          {kindLabel} {activity.number}
         </p>
 
         <p
@@ -31,7 +34,7 @@ function ActivityCard({ activity }) {
           <Link
             to={activity.path}
             className="inline-flex min-h-11 items-center gap-2 font-semibold text-accent transition-colors hover:text-accent-hover"
-            aria-label={`Ver Actividad ${activity.number}: ${activity.title}`}
+            aria-label={`Ver ${kindLabel} ${activity.number}: ${activity.title}`}
           >
             Ver actividad
           </Link>
