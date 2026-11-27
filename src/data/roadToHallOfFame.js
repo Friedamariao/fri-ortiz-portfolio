@@ -38,8 +38,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-01",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-01/184346_fpt01.pdf",
-    pdfFilename: "184346_fpt01.pdf",
+      "resources/road-to-hall-of-fame/fpt-01/OrtizLopezFriedaMaría-Act07.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act07.pdf",
     position: { x: 14, y: 62 },
     iconPath: null,
   },
@@ -54,8 +54,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-02",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-02/184346_fpt02.pdf",
-    pdfFilename: "184346_fpt02.pdf",
+      "resources/road-to-hall-of-fame/fpt-02/OrtizLopezFriedaMaría-Act08.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act08.pdf",
     position: { x: 20, y: 28 },
     iconPath: null,
   },
@@ -70,8 +70,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-03",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-03/184346_fpt03.pdf",
-    pdfFilename: "184346_fpt03.pdf",
+      "resources/road-to-hall-of-fame/fpt-03/OrtizLopezFriedaMaría-Act09.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act09.pdf",
     position: { x: 44, y: 20 },
     iconPath: null,
   },
@@ -87,8 +87,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-04",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-04/184346_fpt04.pdf",
-    pdfFilename: "184346_fpt04.pdf",
+      "resources/road-to-hall-of-fame/fpt-04/OrtizLopezFriedaMaría-Act10.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act10.pdf",
     position: { x: 50, y: 48 },
     iconPath: null,
   },
@@ -103,8 +103,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-05",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-05/184346_fpt05.pdf",
-    pdfFilename: "184346_fpt05.pdf",
+      "resources/road-to-hall-of-fame/fpt-05/OrtizLopezFriedaMaría-Act11.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act11.pdf",
     position: { x: 70, y: 60 },
     iconPath: null,
   },
@@ -120,8 +120,8 @@ export const roadToHallOfFameLabs = [
     path: "/road-to-hall-of-fame/fpt-06",
     pdfHref:
       import.meta.env.BASE_URL +
-      "resources/road-to-hall-of-fame/fpt-06/184346_fpt06.pdf",
-    pdfFilename: "184346_fpt06.pdf",
+      "resources/road-to-hall-of-fame/fpt-06/OrtizLopezFriedaMaría-Act12.pdf",
+    pdfFilename: "OrtizLopezFriedaMaría-Act12.pdf",
     position: { x: 92, y: 45 },
     iconPath: null,
   },

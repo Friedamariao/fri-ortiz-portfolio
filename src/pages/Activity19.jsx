@@ -538,8 +538,8 @@ function Activity19() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_act19.pdf"}
-                            download="184346_act19.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act19.pdf"}
+                            download="OrtizLopezFriedaMaría-Act19.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -742,11 +742,11 @@ function Activity19() {
                     <ActivitySection id="recursos" number="07" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/184346_act19.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-Act19.pdf"}
                                 type="PDF"
                                 title="Informe ejecutivo"
                                 description="Comandos de adquisición, capturas, explicación de cada resultado, indicios, siguientes pasos y conclusión."
-                                download="184346_act19.pdf"
+                                download="OrtizLopezFriedaMaría-Act19.pdf"
                             />
                         </div>
                     </ActivitySection>

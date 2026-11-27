@@ -5,7 +5,7 @@ export const partials = [
     name: "Parcial I",
     topic: "Fundamentos de ciberseguridad",
     status: "active",
-    statusLabel: "En desarrollo",
+    statusLabel: "Completado",
   },
   {
     id: "partial-2",
@@ -13,19 +13,32 @@ export const partials = [
     name: "Parcial II",
     topic: "Sistemas de gestión de la seguridad",
     status: "active",
-    statusLabel: "En desarrollo",
+    statusLabel: "Completado",
   },
   {
     id: "partial-3",
     number: "03",
     name: "Parcial III",
     topic: "Temas actuales en seguridad informática",
-    status: "pending",
-    statusLabel: "Próximamente",
+    status: "active",
+    statusLabel: "Completado",
   },
 ];
 
 export const activities = [
+  {
+    id: "activity-01",
+    number: "01",
+    title: "NotPetya – Maersk, 2017",
+    partialId: "partial-1",
+    description:
+      "Análisis en equipo de un ciberataque real y su impacto empresarial: contexto del ataque NotPetya a Maersk, tabla técnica, evaluación bajo el modelo CIA y cálculo del costo con el marco económico de Adrian Mizzi.",
+    status: "available",
+    statusLabel: "Disponible",
+    path: "/activities/activity-01",
+    technologies: ["NotPetya", "MITRE ATT&CK", "Modelo CIA", "ROISI"],
+    visible: true,
+  },
   {
     id: "activity-02",
     number: "02",
@@ -67,7 +80,7 @@ export const activities = [
   },
   {
     id: "project-01",
-    number: "de Proyecto",
+    number: "01",
     title: "De la teoría a la práctica",
     partialId: "partial-1",
     description:
@@ -187,7 +200,7 @@ export const activities = [
   },
   {
     id: "project-02",
-    number: "de Proyecto",
+    number: "02",
     title: "Blindando la información",
     partialId: "partial-2",
     description:
@@ -265,7 +278,7 @@ export const activities = [
   },
   {
     id: "project-03",
-    number: "de Proyecto",
+    number: "03",
     title: "Operación Narcos: expediente Kowhai",
     partialId: "partial-3",
     description:

@@ -303,15 +303,15 @@ function Activity13() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={resourceBase + "/184346_act13.pdf"}
-              download="184346_act13.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-Act13.pdf"}
+              download="OrtizLopezFriedaMaría-Act13.pdf"
               className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
               Descargar informe
             </a>
             <a
-              href={resourceBase + "/184346_act13_presentacion.pdf"}
-              download="184346_act13_presentacion.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-Act13-Presentacion.pdf"}
+              download="OrtizLopezFriedaMaría-Act13-Presentacion.pdf"
               className="inline-flex min-h-11 items-center justify-center border border-border px-5 py-3 text-sm font-semibold transition-colors hover:border-accent hover:bg-surface"
             >
               Descargar presentación
@@ -1081,15 +1081,15 @@ function Activity13() {
           <ActivitySection id="recursos" number="12" title="Recursos">
             <div className="grid gap-5 sm:grid-cols-2">
               <ResourceLink
-                href={resourceBase + "/184346_act13.pdf"}
-                download="184346_act13.pdf"
+                href={resourceBase + "/OrtizLopezFriedaMaría-Act13.pdf"}
+                download="OrtizLopezFriedaMaría-Act13.pdf"
                 type="PDF"
                 title="Informe completo"
                 description="Red Team Report con metodología, evidencias, análisis de impacto y tabla de hallazgos."
               />
               <ResourceLink
-                href={resourceBase + "/184346_act13_presentacion.pdf"}
-                download="184346_act13_presentacion.pdf"
+                href={resourceBase + "/OrtizLopezFriedaMaría-Act13-Presentacion.pdf"}
+                download="OrtizLopezFriedaMaría-Act13-Presentacion.pdf"
                 type="PDF"
                 title="Presentación ejecutiva"
                 description="Síntesis para Consejo Directivo: nivel de riesgo, hallazgos críticos, matriz de riesgo y roadmap de remediación."

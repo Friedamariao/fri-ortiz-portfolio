@@ -1312,8 +1312,8 @@ function Project03() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_pr03.pdf"}
-                            download="184346_pr03.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-PR03.pdf"}
+                            download="OrtizLopezFriedaMaría-PR03.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -1424,11 +1424,11 @@ function Project03() {
                     <ActivitySection id="recursos" number="08" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/184346_pr03.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-PR03.pdf"}
                                 type="PDF"
                                 title="Informe forense"
                                 description="Informe completo del análisis de Narcos-1 con capturas, interpretación y limitaciones de cada hallazgo."
-                                download="184346_pr03.pdf"
+                                download="OrtizLopezFriedaMaría-PR03.pdf"
                             />
                         </div>
                     </ActivitySection>

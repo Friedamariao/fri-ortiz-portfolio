@@ -116,8 +116,8 @@ function FPT04() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_fpt04.pdf"}
-                            download="184346_fpt04.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act10.pdf"}
+                            download="OrtizLopezFriedaMaría-Act10.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe

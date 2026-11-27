@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import Activity01 from "./pages/Activity01";
 import Activity03 from "./pages/Activity03";
 import Activity04 from "./pages/Activity04";
 import Activity13 from "./pages/Activity13";
@@ -21,6 +22,7 @@ import FPT04 from "./pages/FPT04";
 import FPT05 from "./pages/FPT05";
 import FPT06 from "./pages/FPT06";
 import Home from "./pages/Home";
+import PortfolioIndexPage from "./pages/PortfolioIndexPage";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/activities/activity-01" element={<Activity01 />} />
         <Route path="/activities/activity-03" element={<Activity03 />} />
         <Route path="/activities/activity-04" element={<Activity04 />} />
         <Route path="/activities/activity-13" element={<Activity13 />} />
@@ -48,6 +51,7 @@ function App() {
         <Route path="/road-to-hall-of-fame/fpt-04" element={<FPT04 />} />
         <Route path="/road-to-hall-of-fame/fpt-05" element={<FPT05 />} />
         <Route path="/road-to-hall-of-fame/fpt-06" element={<FPT06 />} />
+        <Route path="/indice-portafolio" element={<PortfolioIndexPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </MainLayout>

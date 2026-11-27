@@ -16,7 +16,7 @@ const commandResponses = {
     "Portafolio académico que documenta progresivamente el aprendizaje del curso.",
 
   sections:
-    "Inicio [activo] · Actividades [activo] · Road to Hall of Fame [activo] · Certificados [próximamente] · Contacto [activo]",
+    "Inicio [activo] · Actividades [activo] · Road to Hall of Fame [activo] · Índice-Portafolio [activo] · Contacto [activo]",
 
   tech: "React 19 · Vite · Tailwind CSS v4 · React Router · Git · GitHub Pages · HTTPS",
 

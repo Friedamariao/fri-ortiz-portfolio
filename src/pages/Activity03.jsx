@@ -28,11 +28,11 @@ const resourceBase = import.meta.env.BASE_URL + "resources/activity-03";
 
 const resources = [
   {
-    href: resourceBase + "/184346_act03.pdf",
+    href: resourceBase + "/OrtizLopezFriedaMaría-Act03.pdf",
     type: "PDF",
     title: "Informe final",
     description: "Versión entregable de la documentación de la actividad.",
-    download: "184346_act03.pdf",
+    download: "OrtizLopezFriedaMaría-Act03.pdf",
   },
   {
     href: resourceBase + "/spyware.py",
@@ -136,8 +136,8 @@ function Activity03() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={resourceBase + "/184346_act03.pdf"}
-              download="184346_act03.pdf"
+              href={resourceBase + "/OrtizLopezFriedaMaría-Act03.pdf"}
+              download="OrtizLopezFriedaMaría-Act03.pdf"
               className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
               Descargar informe

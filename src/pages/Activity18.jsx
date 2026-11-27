@@ -379,8 +379,8 @@ function Activity18() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_act18.pdf"}
-                            download="184346_act18.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act18.pdf"}
+                            download="OrtizLopezFriedaMaría-Act18.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -499,11 +499,11 @@ function Activity18() {
                     <ActivitySection id="recursos" number="07" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/184346_act18.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-Act18.pdf"}
                                 type="PDF"
                                 title="Informe forense"
                                 description="Informe completo con el proceso en Autopsy, capturas, respuestas, líneas de investigación y conclusiones."
-                                download="184346_act18.pdf"
+                                download="OrtizLopezFriedaMaría-Act18.pdf"
                             />
                         </div>
                     </ActivitySection>

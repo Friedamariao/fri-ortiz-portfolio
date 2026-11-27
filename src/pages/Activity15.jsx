@@ -367,8 +367,8 @@ function Activity15() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/OrtizLopezFriedaMaría-ACT15.pdf"}
-                            download="OrtizLopezFriedaMaría-ACT15.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act15.pdf"}
+                            download="OrtizLopezFriedaMaría-Act15.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -582,11 +582,11 @@ function Activity15() {
                     <ActivitySection id="recursos" number="06" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/OrtizLopezFriedaMaría-ACT15.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-Act15.pdf"}
                                 type="PDF"
                                 title="Informe forense"
                                 description="Análisis completo de metadatos de ambas muestras, con procedimiento y evidencia."
-                                download="OrtizLopezFriedaMaría-ACT15.pdf"
+                                download="OrtizLopezFriedaMaría-Act15.pdf"
                             />
                         </div>
                     </ActivitySection>

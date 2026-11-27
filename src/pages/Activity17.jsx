@@ -374,8 +374,8 @@ function Activity17() {
 
                     <div className="mt-10 flex flex-wrap gap-3">
                         <a
-                            href={resourceBase + "/184346_act17.pdf"}
-                            download="184346_act17.pdf"
+                            href={resourceBase + "/OrtizLopezFriedaMaría-Act17.pdf"}
+                            download="OrtizLopezFriedaMaría-Act17.pdf"
                             className="inline-flex min-h-11 items-center justify-center bg-accent px-5 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
                         >
                             Descargar informe
@@ -490,11 +490,11 @@ function Activity17() {
                     <ActivitySection id="recursos" number="06" title="Recursos">
                         <div className="grid gap-5 sm:max-w-sm sm:grid-cols-1">
                             <ResourceLink
-                                href={resourceBase + "/184346_act17.pdf"}
+                                href={resourceBase + "/OrtizLopezFriedaMaría-Act17.pdf"}
                                 type="PDF"
                                 title="Informe forense"
                                 description="Informe completo con los comandos, capturas, hallazgos y conclusión."
-                                download="184346_act17.pdf"
+                                download="OrtizLopezFriedaMaría-Act17.pdf"
                             />
                         </div>
                     </ActivitySection>
